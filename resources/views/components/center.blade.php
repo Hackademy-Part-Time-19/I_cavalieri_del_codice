@@ -7,55 +7,46 @@
     <span class="marquee">IL NUOVO IPHONE 15 IN USCITA IL 16 APRILE&nbsp;</span>
 </div>
 
-<!--PARTI CENTRALI-->
+<!--PARTE CENTRALE-->
 
-<div class="contenitore" style=
-   
-"display: flex;
+<div class="contenitorepadre" style=>
 
- height: 80vh;
+<!--PARTE SINISTRA-->
 
- width: 100%;
+ <div class="sinistra">
 
- background-color: black;
+  <!--CARD GIREVOLI-->
 
- justify-items: center; (IMPORTANTE)
+  <div class="flip-card">
+    <div class="flip-card-inner">
+        <div class="flip-card-front">
 
- margin-left: 200px;">
+          <img class="imgGirevole" src="https://m.media-amazon.com/images/I/815eN0AS-CL._AC_UF894,1000_QL80_.jpg"   alt="IPHONE 15 PRO MAX "> 
 
-<!--PARTE DI SINISTRA-->
+          <h3>IPHONE 15 MAX PRO</h3>
 
- <div style="flex: 1; background-color: red;">
+          <button class="btn">
+            Descrizione
+          </button>
 
-    <div class="card">
-        <div class="card-inner">
-          <div class="card-front">
-            <img src="https://m.media-amazon.com/images/I/81Wwngkh2OL._AC_UF894,1000_QL80_.jpg" alt="Ihone 15" width="500px" height="400px">
-          </div>
-          <div class="card-back">
-            <p>Dispone di un discreto display da 6.1 pollici con una risoluzione di 1179 x 2556 pixel con tecnologia Super Retina XDR OLED, HDR10, Dolby Vision, 1000 nits (HBM), 2000 nits (peak). Sul versante hardware, iPhone 15 dispone di un SOC Apple A16 Bionic (4 nm) e ha GB di ram.</p>
-          </div>
+    
+            
         </div>
-      </div>
-    
-    
-    
-
-
-
-
-
-
-
-
-
-
-
+        <div class="flip-card-back">
+            <p class="title">DESCRIZIONE</p>
+            <p>Dispone di un ottimo display da 6.7 pollici con una risoluzione di 1290 x 2796 pixel con tecnologia LTPO Super Retina XDR OLED, 120Hz, HDR10, Dolby Vision, 1000 nits (typ), 2000 nits (HBM). Sul versante hardware, iPhone 15 Pro Max dispone di un SOC Apple A17 Pro (3 nm) e ha GB di ram.</p>
+        </div>
+    </div>
 </div>
 
- <!--PARTE DI DESTRA-->
 
- <div style="flex: 3; background-color: yellow;"></div>
+
+
+ </div>
+
+ <!--PARTE DESTRA-->
+
+ <div class="destra"></div>
 
 
  </div>

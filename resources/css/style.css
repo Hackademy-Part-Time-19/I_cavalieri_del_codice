@@ -1,5 +1,292 @@
+.body{
+
+    background-color: #4CCD99;
+}
 .container-fluid{
 
+    background-color: #41C9E2;
+  }
+
+  
+
+  /*MESSAGGIO DI SCORIMENTO*/
+
+#animated-text-strip {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  overflow: hidden;
+}
+
+#animated-text-strip .marquee {
+  white-space: nowrap;
+  animation: marquee 15s linear infinite;
+  max-width: none;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  100% {
+    transform: translate(-100%, 0);
+  }
+}
+
+/* Styles for the sake of the demonstration */
+#animated-text-strip {
+  background: #387ADF;
+  padding: 1rem 0;
+}
+
+.marquee {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 2rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: white;
+}
+
+/*LOGIN*/
+
+.titolo {
+
+    margin-top: 80px;
+    margin-right: 75px;
+  }
+  
+  .conteinerLogin {
+  
+    display: flex;
+  
+    height: 30vh;
+  
+    width: 30%;
+  
+    border: solid;
+  
+    justify-items: center;
+  
+    margin-left: 650px;
+  
+  }
+  
+  
+  .formLogin {
+  
+    text-align: center;
+    width: 60%;
+    /* Imposta la larghezza del form al 80% del contenitore */
+    margin: auto;
+    /* Aggiunto per centrare il form */
+  }
+  
+  .formL {
+  
+    margin-left: 250px;
+    margin-top: 40px;
+  
+  }
+  
+  .formL2 {
+  
+    margin-left: 238px;
+    margin-top: 40px;
+  }
+  
+  .formI {
+  
+  
+    width: 400px;
+    margin-left: 80px;
+    margin-top: 10px;
+  
+  
+  }
+  
+  .formB {
+  
+    margin-top: 20px;
+    margin-left: 248px;
+    background-color: #FBA834;
+  }
+  
+  .formB:active {
+  
+    background-color: #74E291;
+  }
+  
+  /*REGISTRAZIONE*/
+  
+  .conteinerRegister {
+  
+    display: flex;
+  
+    height: 60vh;
+  
+    width: 30%;
+  
+    border: solid;
+  
+    justify-items: center;
+  
+    margin-left: 650px;
+  
+    margin-top: 50px;
+  
+  }
+
+  /*LOGOUT*/
+
+
+  
+  .logout  {
+    background-color: #3498db;
+    /* Colore di default del pulsante */
+    color: #ffffff;
+    /* Colore del testo del pulsante */
+    transition: background-color 0.3s ease;
+    /* Transizione fluida del colore */
+    width: 160px;
+  }
+  
+  .logout:hover {
+    background-color: #e74c3c;
+    /* Colore del pulsante al passaggio del mouse */
+  }
+
+/*PARTE CENTRALE*/
+
+.contenitorepadre{
+
+display: flex;
+
+ height: 80vh;
+
+ width: 100%;
+
+ background-color: black;
+
+ justify-items: center;
+
+ 
+}
+
+/*PARTE DI SINISTRA*/
+
+.sinistra{
+
+    flex: 1;
     background-color: red;
 }
+
+/*CARD GIREVOLE*/
+
+.imgGirevole{
+
+     width:200px;
+     height:200px;
+     margin-left: 100px;
+}
+
+.flip-card {
+    background-color: transparent;
+    width: 400px;
+    height: 300px;
+    perspective: 1000px;
+    font-family: sans-serif;
+    margin-left: 50px;
+    
+  }
+  
+  .title {
+    font-size: 1.5em;
+    font-weight: 900;
+    text-align: center;
+    margin: 0;
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+    box-shadow: 0 8px 14px 0 rgba(0,0,0,0.2);
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border: 1px solid coral;
+    border-radius: 1rem;
+  }
+  
+  .flip-card-front {
+    background: linear-gradient(120deg, bisque 60%, rgb(255, 231, 222) 88%,
+       rgb(255, 211, 195) 40%, rgba(255, 127, 80, 0.603) 48%);
+    color: coral;
+  }
+  
+  .flip-card-back {
+    background: linear-gradient(120deg, rgb(255, 174, 145) 30%, coral 88%,
+       bisque 40%, rgb(255, 185, 160) 78%);
+    color: white;
+    transform: rotateY(180deg);
+  }
+
+  /*BOTTONE*/
+
+  .btn {
+    font-size: 1.2rem;
+    padding: 1rem 2.5rem;
+    border: none;
+    outline: none;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    text-transform: uppercase;
+    background-color: rgb(14, 14, 26);
+    color: rgb(234, 234, 234);
+    font-weight: 700;
+    transition: 0.6s;
+    box-shadow: 0px 0px 60px #1f4c65;
+    -webkit-box-reflect: below 10px linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.4));
+  }
+  
+  .btn:active {
+    scale: 0.92;
+  }
+  
+  .btn:hover {
+    background: rgb(2,29,78);
+    background: linear-gradient(270deg, rgba(2, 29, 78, 0.681) 0%, rgba(31, 215, 232, 0.873) 60%);
+    color: rgb(4, 4, 38);
+  }
+
+
+
+/*PARTE DI DESTRA*/
+
+.destra{
+
+    flex: 3; 
+    background-color: yellow;
+}
+
+
+
+
+
 

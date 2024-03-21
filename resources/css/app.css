@@ -1,7 +1,2 @@
-@import'./bootstrap';
-
-
-.prova{
-
-    background-color: blueviolet;
-}
+@import 'bootstrap/dist/css/bootstrap.min.css';
+@import './style.css';
