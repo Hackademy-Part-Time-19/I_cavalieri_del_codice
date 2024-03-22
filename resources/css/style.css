@@ -169,7 +169,6 @@ display: flex;
  background-color: black;
 
  justify-items: center;
-
  
 }
 
@@ -179,15 +178,20 @@ display: flex;
 
     flex: 1;
     background-color: red;
+    overflow: auto;
 }
 
 /*CARD GIREVOLE*/
 
-.imgGirevole{
+.cards-wrapper {
+    max-height: 600px; /* Set maximum height to enable scrolling */
+    overflow-y: auto; /* Enable vertical scrolling */
+}
 
-     width:200px;
-     height:200px;
-     margin-left: 100px;
+/* Your existing CSS for flip cards */
+.card-container {
+    /* Add any necessary styling for card containers */
+    margin-bottom: 20px; /* Add some space between card containers */
 }
 
 .flip-card {
@@ -197,6 +201,26 @@ display: flex;
     perspective: 1000px;
     font-family: sans-serif;
     margin-left: 50px;
+    margin-top: 30px;
+    
+  }
+
+.imgGirevole{
+
+     width:200px;
+     height:200px;
+     margin-left: 100px;
+     
+}
+
+.flip-card {
+    background-color: transparent;
+    width: 400px;
+    height: 300px;
+    perspective: 1000px;
+    font-family: sans-serif;
+    margin-left: 50px;
+    margin-top: 30px;
     
   }
   
@@ -281,8 +305,10 @@ display: flex;
 
 .destra{
 
-    flex: 3; 
+    flex: 4; 
     background-color: yellow;
+    width: 500px;
+    height: 500px;
 }
 
 
