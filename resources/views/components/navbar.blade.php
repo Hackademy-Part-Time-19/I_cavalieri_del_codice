@@ -187,8 +187,14 @@
 
             <div class="dropdown">
               <a style="margin-left: 100px" class="btn btn-primary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                CREA ARTICOLI
+                ARTICOLI
               </a>
+
+              <ul class="dropdown-menu" style="margin-left: 100px">
+                <li><a class="dropdown-item" href="#">Crea articoli</a></li>
+                <li><a class="dropdown-item" href="#">Tutti gli articoli</a></li>
+                
+              </ul>
           </li>
 
            <!--VOCI MENU LINGUA -->
@@ -203,7 +209,7 @@
           <!--BARRA DI RICERCA -->
 
           <form class="d-flex" role="search" style="margin-left: 100px">
-            <input style="width: 200px" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <input style="width: 200px" class="form-control me-2" type="search" placeholder="Search" aria-label="Inizia la tua ricerca">
             <button class="btn btn-outline-success" type="submit">Cerca</button>
           </form>
 

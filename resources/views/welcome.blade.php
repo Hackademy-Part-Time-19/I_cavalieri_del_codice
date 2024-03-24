@@ -4,7 +4,7 @@
 
     <x-center />
 
+    <x-footer />
 
-
-
+    
 </x-layout>
