@@ -458,7 +458,7 @@ body {
   }
 
 
-  /*PARTE CENTRALE SECONDA PROVA*/
+  /*PARTE CENTRALE NON LOGGATO*/
 
   .contenitorepadre {
     display: flex;
@@ -481,6 +481,14 @@ body {
 
   display: none;
 }
+
+/*PARTE CENTRALE LOGGATO*/
+
+.destraA{
+
+  
+}
+
 
 
 /*CONTENITORE HOMEPAGE IMMAGINI A TEMPO */

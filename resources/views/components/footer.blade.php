@@ -24,7 +24,7 @@
                   <div class="flip-card">
                       <div class="flip-card-inner">
                           <div class="flip-card-front">
-                              <img class="imgGirevole" src="https://s3-eu-west-1.amazonaws.com/tpd/logos/5f2bcf6dd70c1600011198c5/0x0.png" alt="IPHONE 15 PRO MAX ">
+                              <img class="imgGirevole" src="https://s3-eu-west-1.amazonaws.com/tpd/logos/5f2bcf6dd70c1600011198c5/0x0.png" alt="Aulab ">
                               <h3>AULAB</h3>
                               <button class="btn description-btn">Descrizione</button>
                           </div>

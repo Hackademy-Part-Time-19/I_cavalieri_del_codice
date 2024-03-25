@@ -106,6 +106,10 @@
 
         </div>
     </div>
+
+    @guest
+        
+    
     <!--PARTE DESTRA-->
     <div class="destra">
 
@@ -426,6 +430,24 @@
 
     </div>
 </div>
+
+@endguest
+
+@auth
+
+ <!--PARTE DESTRA-->
+ <div class="destraA" style="background-color: black; ">
+
+  <div class="F2contenitoreA">
+      
+   <h1>QUI VANNO LE 10 CARD</h1>
+
+</div>
+</div>
+
+
+    
+@endauth
 
 
 
