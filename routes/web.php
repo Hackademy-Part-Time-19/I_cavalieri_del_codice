@@ -19,3 +19,6 @@ Route::get('/', function () {
 });
 
 Route::get('/',[PublicController::class,'homepage'])->name('homepage') ;
+
+
+
