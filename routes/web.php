@@ -21,4 +21,13 @@ Route::get('/', function () {
 Route::get('/',[PublicController::class,'homepage'])->name('homepage') ;
 
 
+//PAGINE INGLESI//
+
+Route::get('/homepageinglese', function () {
+    return view('homepageinglese');
+});
+
+
+
+
 

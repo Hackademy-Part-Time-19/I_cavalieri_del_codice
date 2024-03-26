@@ -1,4 +1,4 @@
-@guest
+@auth
     <!--FOOTER-->
 
     <footer class="contenitoreFinale">
@@ -271,6 +271,5 @@
 
     </footer>
 
-@endguest
-
+    @endguest
 

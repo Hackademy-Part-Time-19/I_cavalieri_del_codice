@@ -91,9 +91,9 @@
 
            <select class="form-select" aria-label="Default select example" style="margin-left: 100px">
             <option selected>SELEZIONA LINGUA</option>
-            <option value="1">ITALIANO</option>
-            <option value="2">INGLESE</option>
-            <option value="3">GIAPPONESE</option>
+            <option value="1"><a href="">ITALIANO</a></option>
+            <option value="1"><a href="./homepageinglese">INGLESE</a></option>
+            <option value="1"><a href="">GIAPPONESE</a></option>
           </select>
 
           <!--BARRA DI RICERCA -->

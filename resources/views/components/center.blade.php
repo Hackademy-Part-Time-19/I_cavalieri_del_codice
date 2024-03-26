@@ -1,13 +1,45 @@
 <!--MESSAGGIO SCOREVOLE-->
+@guest
+<div id="animated-text-strip">
+    <span class="marquee">ULTIME NOTIZIE DAL NOSTRO PARTENER SKY&nbsp;</span>
+    <span class="marquee">♠♠♠♠ULTIME NOTIZIE DAL NOSTRO PARTENER SKY&nbsp;</span>
+    <span class="marquee">♠♠♠♠ULTIME NOTIZIE DAL NOSTRO PARTENER SKY&nbsp;</span>
+    <span class="marquee">♠♠♠♠ULTIME NOTIZIE DAL NOSTRO PARTENER SKY&nbsp;</span>
+</div>
+@endguest
+
+
+@auth
 
 <div id="animated-text-strip">
-    <span class="marquee">IL NUOVO IPHONE 15 IN USCITA IL 16 APRILE&nbsp;</span>
-    <span class="marquee">IL NUOVO IPHONE 15 IN USCITA IL 16 APRILE&nbsp;</span>
-    <span class="marquee">IL NUOVO IPHONE 15 IN USCITA IL 16 APRILE&nbsp;</span>
-    <span class="marquee">IL NUOVO IPHONE 15 IN USCITA IL 16 APRILE&nbsp;</span>
+  <span class="marquee">RACCOLTA DI ARTICOLI DAI NOSTRI UTENTI&nbsp;</span>
+  <span class="marquee">♥♥♥♥RACCOLTA DI ARTICOLI DAI NOSTRI UTENTI&nbsp;</span>
+  <span class="marquee">♥♥♥♥RACCOLTA DI ARTICOLI DAI NOSTRI UTENTI&nbsp;</span>
+  <span class="marquee">♥♥♥♥RACCOLTA DI ARTICOLI DAI NOSTRI UTENTI&nbsp;</span>
 </div>
 
+ <!--PARTE DESTRA-->
+ <div class="destraA" style="background-color: black; ">
+
+  <div class="F2contenitoreA">
+      
+   <h1>QUI VANNO LE 10 CARD</h1>
+
+</div>
+</div>
+
+<div id="animated-text-strip">
+  <span class="marquee">ULTIME NOTIZIE DAL NOSTRO PARTENER SKY&nbsp;</span>
+  <span class="marquee">♠♠♠♠ULTIME NOTIZIE DAL NOSTRO PARTENER SKY&nbsp;</span>
+  <span class="marquee">♠♠♠♠ULTIME NOTIZIE DAL NOSTRO PARTENER SKY&nbsp;</span>
+  <span class="marquee">♠♠♠♠ULTIME NOTIZIE DAL NOSTRO PARTENER SKY&nbsp;</span>
+</div>
+
+@endauth
+
 <!--PARTE CENTRALE-->
+
+
 
 <div class="contenitorepadre"> 
 
@@ -107,8 +139,6 @@
         </div>
     </div>
 
-    @guest
-        
     
     <!--PARTE DESTRA-->
     <div class="destra">
@@ -136,7 +166,7 @@
                                   <!--PULSANTE DI INVIO LINK-->
 
                                   <a href="https://tg24.sky.it/lifestyle/oroscopo/oggi" target="_blank" class="btnSito">
-                                    <strong>VAI AL SITO</strong>
+                                    <strong>VAI AL SITO PARTENER SKY</strong>
                                   </a>
                                     <div id="container-stars">
                                       <div id="stars"></div>
@@ -171,7 +201,7 @@
                                     Onu, un testo su Gaza sarà votato lunedì. Hamas: 32.142 palestinesi morti. Colpiti tre magazzini di stoccaggio degli Huthi in Yemen  </p>
                                   
                                     <a href="https://tg24.sky.it/mondo/2024/03/23/ucraina-russia-guerra-ultime-notizie-23-marzo-diretta" target="_blank" class="btnSito">
-                                      <strong>VAI AL SITO</strong>
+                                      <strong>VAI AL SITO PARTENER SKY</strong>
                                     </a>
                                       <div id="container-stars">
                                         <div id="stars"></div>
@@ -205,7 +235,7 @@
                                   <!--PULSANTE DI INVIO LINK-->
 
                                   <a href="https://sport.sky.it/" target="_blank" class="btnSito">
-                                    <strong>VAI AL SITO</strong>
+                                    <strong>VAI AL SITO PARTENER SKY</strong>
                                   </a>
                                     <div id="container-stars">
                                       <div id="stars"></div>
@@ -244,7 +274,7 @@
                                   <!--PULSANTE DI INVIO LINK-->
 
                                   <a href="https://tg24.sky.it/politica" target="_blank" class="btnSito">
-                                    <strong>VAI AL SITO</strong>
+                                    <strong>VAI AL SITO PARTENER SKY</strong>
                                   </a>
                                     <div id="container-stars">
                                       <div id="stars"></div>
@@ -282,7 +312,7 @@
                                   <!--PULSANTE DI INVIO LINK-->
 
                                   <a href="https://tg24.sky.it/salute-e-benessere/medicina" target="_blank" class="btnSito">
-                                    <strong>VAI AL SITO</strong>
+                                    <strong>VAI AL SITO PARTENER SKY</strong>
                                   </a>
                                     <div id="container-stars">
                                       <div id="stars"></div>
@@ -320,7 +350,7 @@
                             <!--PULSANTE DI INVIO LINK-->
 
                             <a href="https://tg24.sky.it/spettacolo/moda" target="_blank" class="btnSito">
-                              <strong>VAI AL SITO</strong>
+                              <strong>VAI AL SITO PARTENER SKY</strong>
                             </a>
                               <div id="container-stars">
                                 <div id="stars"></div>
@@ -356,8 +386,8 @@
                             Il red carpet degli Oscar, è una enorme passerella da tenere d'occhio per studiare le tendenze... </p>
                           <!--PULSANTE DI INVIO LINK-->
 
-                          <a href="https://i.etsystatic.com/8428456/r/il/ecfe51/1327510806/il_570xN.1327510806_2pp8.jpg" target="_blank" class="btnSito">
-                            <strong>VAI AL SITO</strong>
+                          <a href="https://tg24.sky.it/argomenti/moda" target="_blank" class="btnSito">
+                            <strong>VAI AL SITO PARTENER SKY</strong>
                           </a>
                             <div id="container-stars">
                               <div id="stars"></div>
@@ -393,7 +423,7 @@
                         <!--PULSANTE DI INVIO LINK-->
 
                         <a href="https://tg24.sky.it/argomenti/finanza" target="_blank" class="btnSito">
-                          <strong>VAI AL SITO</strong>
+                          <strong>VAI AL SITO PARTENER SKY</strong>
                         </a>
                           <div id="container-stars">
                             <div id="stars"></div>
@@ -410,10 +440,9 @@
                 </div>
           </div>
           </div>
-      </div>
-           
-
-                
+      </div>   
+      
+      @guest
                 
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
                     <span class="frecce"  class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -423,6 +452,8 @@
                     <span class="frecce" style="display: none;" class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Next</span>
                 </button>
+
+                @endguest
             </div>
         </div>
     
@@ -431,23 +462,11 @@
     </div>
 </div>
 
-@endguest
-
-@auth
-
- <!--PARTE DESTRA-->
- <div class="destraA" style="background-color: black; ">
-
-  <div class="F2contenitoreA">
-      
-   <h1>QUI VANNO LE 10 CARD</h1>
-
-</div>
-</div>
 
 
-    
-@endauth
+
+
+
 
 
 

@@ -6,5 +6,8 @@
 
     <x-footer />
 
+    <x-footerlogin  />
+
     
 </x-layout>
+
