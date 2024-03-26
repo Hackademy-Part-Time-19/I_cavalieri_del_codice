@@ -93,7 +93,7 @@
             <option selected>SELEZIONA LINGUA</option>
             <option value="1"><a href="">ITALIANO</a></option>
             <option value="1"><a href="./homepageinglese">INGLESE</a></option>
-            <option value="1"><a href="">GIAPPONESE</a></option>
+            <option value="1"><a href="./homepagegiapponese.blade.php">GIAPPONESE</a></option>
           </select>
 
           <!--BARRA DI RICERCA -->
@@ -140,7 +140,7 @@
                 <li><a class="dropdown-item" href="#">Smartphone</a></li>
                 <li><a class="dropdown-item" href="#">Schermi</a></li>
                 <li><a class="dropdown-item" href="#">Console</a></li>
-                <li><a class="dropdown-item" href="#">Computer</a></li>
+                <li><a class="dropdown-item" href="">Computer</a></li>
               </ul>
             </div>
           </li>

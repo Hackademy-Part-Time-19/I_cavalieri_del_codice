@@ -27,6 +27,12 @@ Route::get('/homepageinglese', function () {
     return view('homepageinglese');
 });
 
+//PAGINE GIAPPONESI//
+
+Route::get('/homepagegiapponese', function () {
+    return view('homepagegiapponese');
+});
+
 
 
 
