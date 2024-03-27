@@ -33,6 +33,12 @@ Route::get('/homepagegiapponese', function () {
     return view('homepagegiapponese');
 });
 
+Route::get('/article/index' , [ArticleController::class, 'index'])->name('article.index');
+
+Route::get('/article/show/{article}' , [ArticleController::class, 'show'])->name('article.show');
+
+Route::get('/article/category/{vategory}' , [ArticleController::class , 'byCategory' ])->name('article.byCategory');
+
 
 
 
