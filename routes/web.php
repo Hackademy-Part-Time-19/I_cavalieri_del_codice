@@ -25,13 +25,13 @@ Route::get('/',[PublicController::class,'homepage'])->name('homepage') ;
 
 Route::get('/homepageinglese', function () {
     return view('homepageinglese');
-});
+})->name('homepageinglese');
 
 //PAGINE GIAPPONESI//
 
 Route::get('/homepagegiapponese', function () {
     return view('homepagegiapponese');
-});
+})->name('homepagegiapponese');
 
 
 

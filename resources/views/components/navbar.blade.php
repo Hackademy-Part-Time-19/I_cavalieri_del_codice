@@ -88,13 +88,20 @@
           
 
            <!--VOCI MENU LINGUA -->
+           <li class="nav-item dropdown">
 
-           <select class="form-select" aria-label="Default select example" style="margin-left: 100px">
-            <option selected>SELEZIONA LINGUA</option>
-            <option value="1"><a href="">ITALIANO</a></option>
-            <option value="1"><a href="./homepageinglese">INGLESE</a></option>
-            <option value="1"><a href="./homepagegiapponese.blade.php">GIAPPONESE</a></option>
-          </select>
+            <div class="dropdown">
+              <a style="margin-left: 100px" class="btn btn-primary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                SELEZIONA LINGUA
+              </a>
+            
+              <ul class="dropdown-menu" style="margin-left: 100px">
+                <li><a class="dropdown-item" href="{{route('homepage')}}">Italiano</a></li>
+                <li><a class="dropdown-item" href="{{route('homepageinglese')}}">Inglese</a></li>
+                <li><a class="dropdown-item" href="{{route('homepagegiapponese')}}">Giapponese</a></li>
+              </ul>
+            </div>
+          </li>
 
           <!--BARRA DI RICERCA -->
 
