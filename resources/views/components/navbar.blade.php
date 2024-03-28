@@ -6,17 +6,14 @@
 
             <!--LOGO-->
 
-            <a class="navbar-brand" href="/"><img
-                    src="https://s3-eu-west-1.amazonaws.com/tpd/logos/5f2bcf6dd70c1600011198c5/0x0.png" width="100px"
-                    alt="Logo"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+      <a class="navbar-brand" href="/"><img src="https://s3-eu-west-1.amazonaws.com/tpd/logos/5f2bcf6dd70c1600011198c5/0x0.png" width="100px" alt="Logo"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
             <!--VOCI MENU TECNOLOGIA-->
 
-            <div class="distanza" class="collapse navbar-collapse" id="navbarSupportedContent">
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
@@ -31,29 +28,27 @@
                                 <li><a class="dropdown-item" href="#">Schermi</a></li>
                                 <li><a class="dropdown-item" href="#">Console</a></li>
                                 <li><a class="dropdown-item" href="#">Computer</a></li>
-                                <li><a class="dropdown-item" href="#">AI</a></li>
                             </ul>
                         </div>
                     </li>
 
-                    <!--VOCI MENU TENDENZA-->
+        <!--VOCI MENU TENDENZA-->
 
                     <li class="nav-item">
 
-                        <div class="dropdown">
-                            <a style="margin-left: 50px" class="btn btn-primary dropdown-toggle" href="#"
-                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                TENDENZA
-                            </a>
-
-                            <ul class="dropdown-menu" style="margin-left: 100px">
-                                <li><a class="dropdown-item" href="#">Animali</a></li>
-                                <li><a class="dropdown-item" href="#">Moda </a></li>
-                                <li><a class="dropdown-item" href="#">Medicina</a></li>
-                                <li><a class="dropdown-item" href="#">Sport</a></li>
-                            </ul>
-                        </div>
-                    </li>
+            <div class="dropdown">
+              <a style="margin-left: 100px" class="btn btn-primary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                TENDENZA
+              </a>
+            
+              <ul class="dropdown-menu" style="margin-left: 100px">
+                <li><a class="dropdown-item" href="#">Animali</a></li>
+                <li><a class="dropdown-item" href="#">Moda </a></li>
+                <li><a class="dropdown-item" href="#">Medicina</a></li>
+                <li><a class="dropdown-item" href="#">Sport</a></li>
+              </ul>
+            </div>
+          </li>
 
                     <!--VOCI MENU NEWS -->
 
@@ -95,22 +90,14 @@
 
 
 
-                    <!--VOCI MENU LINGUA -->
-                    <li class="nav-item dropdown">
+           <!--VOCI MENU LINGUA -->
 
-                        <div class="dropdown">
-                            <a style="margin-left: 100px" class="btn btn-primary dropdown-toggle" href="#"
-                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                SELEZIONA LINGUA
-                            </a>
-
-                            <ul class="dropdown-menu" style="margin-left: 100px">
-                                <li><a class="dropdown-item" href="{{ route('homepage') }}">Italiano</a></li>
-                                <li><a class="dropdown-item" href="{{ route('homepageinglese') }}">Inglese</a></li>
-                                <li><a class="dropdown-item" href="{{ route('homepagegiapponese') }}">Giapponese</a></li>
-                            </ul>
-                        </div>
-                    </li>
+           <select class="form-select" aria-label="Default select example" style="margin-left: 100px">
+            <option selected>SELEZIONA LINGUA</option>
+            <option value="1"><a href="">ITALIANO</a></option>
+            <option value="1"><a href="./homepageinglese">INGLESE</a></option>
+            <option value="1"><a href="./homepagegiapponese.blade.php">GIAPPONESE</a></option>
+          </select>
 
                     <!--BARRA DI RICERCA -->
 
@@ -215,31 +202,28 @@
                                 ARTICOLI
                             </a>
 
-                            <ul class="dropdown-menu" style="margin-left: 100px">
-                                <li><a class="dropdown-item" href="#">Crea articoli</a></li>
-                                <li><a class="dropdown-item" href="#">Tutti gli articoli</a></li>
-
-                            </ul>
-                    </li>
+              <ul class="dropdown-menu" style="margin-left: 100px">
+                <li><a class="dropdown-item" href="#">Crea articoli</a></li>
+                <li><a class="dropdown-item" href="#">Tutti gli articoli</a></li>
+                
+              </ul>
+          </li>
 
                     <!--VOCI MENU LINGUA -->
 
-                    <li class="nav-item dropdown">
+           <select class="form-select" aria-label="Default select example" style="margin-left: 100px">
+            <option selected>SELEZIONA LINGUA</option>
+            <option value="1">ITALIANO</option>
+            <option value="2">INGLESE</option>
+            <option value="3">GIAPPONESE</option>
+          </select>
 
-                        <div class="dropdown">
-                            <a style="margin-left: 100px" class="btn btn-primary dropdown-toggle" href="#"
-                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                SELEZIONA LINGUA
-                            </a>
+          <!--BARRA DI RICERCA -->
 
-                            <ul class="dropdown-menu" style="margin-left: 100px">
-                                <li><a class="dropdown-item" href="{{ route('homepage') }}">Italian</a></li>
-                                <li><a class="dropdown-item" href="{{ route('homepageinglese') }}">English</a></li>
-                                <li><a class="dropdown-item" href="{{ route('homepagegiapponese') }}">Japanese</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </li>
+          <form class="d-flex" role="search" style="margin-left: 100px">
+            <input style="width: 200px" class="form-control me-2" type="search" placeholder="Search" aria-label="Inizia la tua ricerca">
+            <button class="btn btn-outline-success" type="submit">Cerca</button>
+          </form>
 
                     <!--VOCI MENU LOGIN/REGISTRATI -->
 
@@ -251,34 +235,30 @@
                                 BENVENUTO {{ auth()->user()->name }}
                             </a>
 
-                            <ul class="dropdown-menu" style="margin-left: 100px">
-                                <li><a class="dropdown-item" href="#">
-                                        <form action="/logout" method="post">
-                                            @csrf
-
-                                <li><a class="dropdown-item" href="{{ route('homepageinglese') }}">Lavora con noi</a></li>
-                                <li><a class="dropdown-item" href="{{ route('homepagegiapponese') }}">Amministratore</a>
-
-                                    <button class="logout" type="submit">ESCI</button>
-                                    </a>
-                                </li>
-
-                            </ul>
-                        </div>
-                    </li>
-
+              <ul class="dropdown-menu" style="margin-left: 100px">
+                <li><a class="dropdown-item" href="#"> <form action="/logout" method="post">
+                  @csrf
+          
+                  <button class="logout" type="submit">ESCI</button></a></li>
+                
+              </ul>
             </div>
-            </li>
+          </li>
+              
+            </div>
+          </li> 
+      </div>
+    </div>
+  </nav>
 
-            <!--BARRA DI RICERCA -->
 
-            <form class="d-flex" role="search" style="margin-left: 100px">
-                <input style="width: 150px" class="form-control me-2" type="search" placeholder="Cerca"
-                    aria-label="Inizia la tua ricerca">
-                <button class="btn btn-outline-success" type="submit">Cerca</button>
-            </form>
-        </div>
-        </div>
-    </nav>
 
-@endauth
+      
+  @endauth
+
+
+
+
+
+
+  

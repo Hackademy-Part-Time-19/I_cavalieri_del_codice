@@ -2,20 +2,28 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Article;
 use Illuminate\Http\Request;
+use App\Mail\CareerRequestMail;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Mail;
-use App\Http\Controllers\PublicController;
+
+
 
 class PublicController extends Controller
 {
+
+    public function homepage (){
+        $articles= Article::orderBy('created_at' , 'desc')->take(4)->get();
+        return view ('InserisciArticolo' , compact ('articles'));
+    }
     public function __construct() {
         $this->middleware('auth')->except('homepage');
     }
 
-    public function homepage() {
-        return view('welcome');
-    }
+    // public function homepage() {
+    //     return view('welcome');
+    // }
 
     public function careers() {
         return view('careers');
