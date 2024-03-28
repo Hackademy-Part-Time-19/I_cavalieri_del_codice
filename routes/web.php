@@ -32,6 +32,8 @@ Route::get('/homepageinglese', function () {
 Route::get('/homepagegiapponese', function () {
     return view('homepagegiapponese');
 })->name('homepagegiapponese');
+Route::get('/careers' , [PublicController::class , 'careers'])->name('careers');
+Route::post('/careers/submit' , [PublicController::class , 'careersSubmit'])->name('careers.submit');
 
 
 
