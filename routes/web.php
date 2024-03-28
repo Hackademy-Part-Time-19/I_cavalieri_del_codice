@@ -25,13 +25,15 @@ Route::get('/',[PublicController::class,'homepage'])->name('homepage') ;
 
 Route::get('/homepageinglese', function () {
     return view('homepageinglese');
-});
+})->name('homepageinglese');
 
 //PAGINE GIAPPONESI//
 
 Route::get('/homepagegiapponese', function () {
     return view('homepagegiapponese');
-});
+})->name('homepagegiapponese');
+Route::get('/careers' , [PublicController::class , 'careers'])->name('careers');
+Route::post('/careers/submit' , [PublicController::class , 'careersSubmit'])->name('careers.submit');
 
 Route::get('/article/index' , [ArticleController::class, 'index'])->name('article.index');
 
