@@ -1,7 +1,48 @@
+
 <x-layout>
+
   <x-navbar />
 
   <center>
+    <h1 class="titolo">LOGIN</h1>
+</center>
+
+  <div  class="container-sm">
+
+
+  <form  action="/login" method="post">
+
+    @csrf
+
+    <div class="mb-3">
+
+      <label for="email" class="form-label">INDIRIZZO EMAIL</label>
+
+      <input type="email" class="form-control" type="text" id="email" name="email" required>
+     
+    </div>
+
+
+    <div class="mb-3">
+      <label for="exampleInputPassword1" class="form-label">PASSWORD</label>
+      <input type="password" class="form-control" id="exampleInputPassword1">
+    </div>
+
+
+    <div class="mb-3 form-check">
+      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+      <label class="form-check-label" for="exampleCheck1">Check me out</label>
+    </div>
+
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+
+</div>
+
+
+
+  <!--<center>
     <h1 class="titolo">LOGIN</h1>
 </center>
 
@@ -24,7 +65,7 @@
     </form>
 
 
-</div>
+</div>-->
 
 <!--LOGO ICONE-->
 <div class="row" style="margin-top: 50px">

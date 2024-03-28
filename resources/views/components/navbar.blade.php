@@ -31,6 +31,7 @@
                                 <li><a class="dropdown-item" href="#">Schermi</a></li>
                                 <li><a class="dropdown-item" href="#">Console</a></li>
                                 <li><a class="dropdown-item" href="#">Computer</a></li>
+                                <li><a class="dropdown-item" href="#">AI</a></li>
                             </ul>
                         </div>
                     </li>

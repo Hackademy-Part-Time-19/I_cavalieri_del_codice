@@ -1,3 +1,8 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+}
+
 .corpo {
 
   background-color: #76ABAE;
@@ -7,8 +12,8 @@
 .container-fluid {
 
   background-color: #41C9E2;
+  
 }
-
 
 
 /*MESSAGGIO DI SCORIMENTO*/
@@ -232,6 +237,14 @@ body {
 }
 
 /*LOGIN*/
+
+.container-sm{
+
+  border: solid;
+  margin-top: 80px;
+}
+
+
 
 .titolo {
 
@@ -852,6 +865,38 @@ ul {
 .example-2 .icon-content a[data-social="youtube"]~.tooltip {
   background-color: #ff0000;
 }
+
+
+.F2contenitoreA {
+  width: 80%; /* Larghezza predefinita per il contenitore */
+  margin: 0 auto; /* Centrare il contenitore */
+}
+
+/* Media query per dispositivi con larghezza dello schermo fino a 768px (ad esempio, smartphone in modalità portrait) */
+@media only screen and (max-width: 768px) {
+  .F2contenitoreA {
+      width: 90%; /* Ridurre la larghezza del contenitore per adattarsi meglio ai dispositivi mobili */
+  }
+
+  /* Altri stili specifici per dispositivi mobili, se necessario */
+}
+
+/* Media query per dispositivi con larghezza dello schermo compresa tra 769px e 1024px (ad esempio, tablet in modalità portrait) */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .F2contenitoreA {
+      width: 70%; /* Modifica della larghezza del contenitore per adattarsi ai tablet */
+  }
+
+  /* Altri stili specifici per tablet, se necessario */
+}
+
+/* Media query per dispositivi con larghezza dello schermo superiore a 1024px (ad esempio, schermi desktop) */
+@media only screen and (min-width: 1025px) {
+  /* Stili aggiuntivi per schermi desktop, se necessario */
+}
+
+
+
 
 
 
