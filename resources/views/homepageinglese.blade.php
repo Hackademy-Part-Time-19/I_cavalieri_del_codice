@@ -314,7 +314,7 @@
         </div>
 
         <!--PARTE DESTRA-->
-        <div class="destraA" style="background-color: black; ">
+        <div class="destraA" style="background-color: yellow ">
 
             <div class="F2contenitoreA">
 
