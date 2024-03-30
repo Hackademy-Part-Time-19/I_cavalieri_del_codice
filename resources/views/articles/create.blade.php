@@ -32,7 +32,7 @@
                     <input type="text" name="subtitle" class="form-control" id="subtitle" value="{{ old('subtitle')}}">
                    </div>
                    <div class="mb-3">
-                    <label for="image" class="form-label">Imagine:</label>
+                    <label for="image" class="form-label">Immagine:</label>
                     <input type="fill" name="image" class="form-control" id="image">
                    </div>
                    <div class="mb-3">
