@@ -203,8 +203,8 @@
                             </a>
 
               <ul class="dropdown-menu" style="margin-left: 100px">
-                <li><a class="dropdown-item" href="#">Crea articoli</a></li>
-                <li><a class="dropdown-item" href="#">Tutti gli articoli</a></li>
+                <li><a class="dropdown-item" href="{{ route('article.create')}}">Crea un articolo</a></li>
+                <li><a class="dropdown-item" href="{{ route ('article.index')}}">Tutti gli articoli</a></li>
                 
               </ul>
           </li>

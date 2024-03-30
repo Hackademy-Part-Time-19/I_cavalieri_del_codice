@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Article;
+use App\Models\Category;
 use Illuminate\Http\Request;
 
 class ArticleController extends Controller
@@ -13,7 +14,15 @@ class ArticleController extends Controller
     public function index()
     {
         $articles = Article::orderBy('created_at', 'desc')->get();
-        return view('article.index');
+        return view('welcome', compact('articles'));
+    }
+
+    public function byCategory(Category $category)
+    {
+
+        $articles = $category->articles()->orderby('created_at', 'desc')->get();
+        return view('article.by-category', compact('category', 'articles'));
+
     }
 
     /**
@@ -37,7 +46,7 @@ class ArticleController extends Controller
      */
     public function show(Article $article)
     {
-        return view ('article.show', compact('article'));
+        return view('article.show', compact('article'));
     }
 
     /**
@@ -45,7 +54,7 @@ class ArticleController extends Controller
      */
     public function edit(Article $article)
     {
-        
+
     }
 
     /**
@@ -64,14 +73,5 @@ class ArticleController extends Controller
         //
     }
 
-    Public function byCategory(Category $byCategory){
 
-
-        $articles= $category->articles()->orderby('created_at' , 'desc')->get();
-        return view ('article.by-category' , compact('category', 'articles'));
-        
-        
-        
-        
-        }
 }
