@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Controllers\Auth;
 use App\Models\Article;
 use App\Models\Category;
 use Illuminate\Http\Request;
@@ -38,7 +39,22 @@ class ArticleController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $request->validate([
+            'title'=> 'required|unique:articles|min:5',
+            'subtitle'=> 'required|min:5',
+            'body'=> 'required|min:10',
+            'image'=> 'image|required',
+            'category'=> 'required',
+        ]);
+        $article = Article::create([
+            'title'=> $request->title,
+            'subtitle'=> $request->subtitle,
+            'body'=> $request->body,
+            'image'=> $request->file('image')->store('pulic/images'),
+            'category_id'=> $request->category,
+            'user_id' => Auth::user()->id,
+        ]);
+        return redirect(route('homepage'))->with('message' ,'Articolo creato correttamente');
     }
 
     /**
