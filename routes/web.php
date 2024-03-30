@@ -44,7 +44,7 @@ Route::get('/article/show/{article}' , [ArticleController::class, 'show'])->name
 
 Route::get('/article/category/{category}' , [ArticleController::class , 'byCategory' ])->name('article.byCategory');
 
-
+Route::get('/articles/create' , [ArticleController::class , 'create'])->name('article.create');
 
 
 
