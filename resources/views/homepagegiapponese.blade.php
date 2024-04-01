@@ -455,7 +455,7 @@
                         <div class="carousel-item active">
 
                             <div class="card mb-3 "
-                                style="max-width: 800px; max-height: 8000px; margin-top:100px; background-color: #{{ dechex(mt_rand(0, 0xffffff)) }};">
+                                style="max-width: 800px; max-height: 8000px; margin-top:100px; background-color: #{{ dechex(mt_rand(0, 0xffffff)) }}; width: 800px;">
                                 <div class="row g-0">
                                     <div class="col-md-4">
                                         <img src="https://us.123rf.com/450wm/chatun09/chatun092211/chatun09221100141/194410490-ariete-costellazione-e-segno-zodiacale-sullo-sfondo-dell-universo-cosmico-disegno-blu-e-bianco.jpg?ver=6"
@@ -498,7 +498,7 @@
                         <div class="carousel-item">
 
                             <div class="card mb-3 "
-                                style="max-width: 800px; max-height: 8000px; margin-top:100px; background-color: #{{ dechex(mt_rand(0, 0xffffff)) }};">
+                                style="max-width: 800px; max-height: 8000px; margin-top:100px; background-color: #{{ dechex(mt_rand(0, 0xffffff)) }}; width: 800px;">
                                 <div class="row g-0">
                                     <div class="col-md-4">
                                         <img src="https://play-lh.googleusercontent.com/kq54ZLU02wm63f2pASZrh2Q8aUDt_rKAeD_fmP-SOd0lSdUSTidIocWwKE1YdK-3Bg"
@@ -535,7 +535,7 @@
                         <div class="carousel-item">
 
                             <div class="card mb-3 "
-                                style="max-width: 800px; max-height: 8000px; margin-top:100px; background-color: #{{ dechex(mt_rand(0, 0xffffff)) }};">
+                                style="max-width: 800px; max-height: 8000px; margin-top:100px; background-color: #{{ dechex(mt_rand(0, 0xffffff)) }}; width: 800px;">
                                 <div class="row g-0">
                                     <div class="col-md-4">
                                         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Sport_balls.svg/480px-Sport_balls.svg.png"
@@ -575,7 +575,7 @@
                         <div class="carousel-item">
 
                             <div class="card mb-3 "
-                                style="max-width: 800px; max-height: 8000px; margin-top:100px; background-color: #{{ dechex(mt_rand(0, 0xffffff)) }};">
+                                style="max-width: 800px; max-height: 8000px; margin-top:100px; background-color: #{{ dechex(mt_rand(0, 0xffffff)) }}; width: 800px;">
                                 <div class="row g-0">
                                     <div class="col-md-4">
                                         <img src="https://www.digital-target.com/wp-content/uploads/2018/06/N14053_politica-2-638.jpg"
@@ -618,7 +618,7 @@
                     <div class="carousel-item">
 
                         <div class="card mb-3 "
-                            style="max-width: 800px; max-height: 8000px; margin-top:100px; background-color: #{{ dechex(mt_rand(0, 0xffffff)) }};">
+                            style="max-width: 800px; max-height: 8000px; margin-top:100px; background-color: #{{ dechex(mt_rand(0, 0xffffff)) }}; width: 800px;">
                             <div class="row g-0">
                                 <div class="col-md-4">
                                     <img src="https://img.freepik.com/premium-vector/medicine-icons-set_98292-1962.jpg"
@@ -658,7 +658,7 @@
                     <div class="carousel-item">
 
                         <div class="card mb-3 "
-                            style="max-width: 800px; max-height: 8000px; margin-top:100px; background-color: #{{ dechex(mt_rand(0, 0xffffff)) }};">
+                            style="max-width: 800px; max-height: 8000px; margin-top:100px; background-color: #{{ dechex(mt_rand(0, 0xffffff)) }}; width: 800px;">
                             <div class="row g-0">
                                 <div class="col-md-4">
                                     <img src="https://static.vecteezy.com/ti/vettori-gratis/p3/542268-set-di-facce-di-animali-carini-vettoriale.jpg"
@@ -703,7 +703,7 @@
                     <div class="carousel-item">
 
                         <div class="card mb-3 "
-                            style="max-width: 800px; max-height: 8000px; margin-top:100px; background-color: #{{ dechex(mt_rand(0, 0xffffff)) }};">
+                            style="max-width: 800px; max-height: 8000px; margin-top:100px; background-color: #{{ dechex(mt_rand(0, 0xffffff)) }}; width: 800px;">
                             <div class="row g-0">
                                 <div class="col-md-4">
                                     <img src="https://st2.depositphotos.com/4060975/8544/v/950/depositphotos_85441904-stock-illustration-fashion-vector-icons-3.jpg"
@@ -743,7 +743,7 @@
                     <div class="carousel-item">
 
                         <div class="card mb-3 "
-                            style="max-width: 800px; max-height: 8000px; margin-top:100px; background-color: #{{ dechex(mt_rand(0, 0xffffff)) }};">
+                            style="max-width: 800px; max-height: 8000px; margin-top:100px; background-color: #{{ dechex(mt_rand(0, 0xffffff)) }}; width: 800px;">
                             <div class="row g-0">
                                 <div class="col-md-4">
                                     <img src="https://sociologicamente.it/wp-content/uploads/2022/07/borsa-finanza.jpg"

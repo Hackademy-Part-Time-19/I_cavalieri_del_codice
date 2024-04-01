@@ -1,13 +1,9 @@
 <x-layout>
 
     <x-navbar />
-<div class="container-fluid p-5 bg-info texte-center text-white">
-    <div class="row justify-content-center">
-        <h1 class="display-1">
-            The Aulab Post
-        </h1>
-    </div>
-</div>
+
+    <x-center>
+        
     <div class="container ">
 
         <div class="row card-deck">
@@ -35,7 +31,7 @@
     </div>
 
 
-    <x-center />
+     </x-center>
 
     <x-footer />
 

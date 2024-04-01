@@ -23,8 +23,7 @@
     </div>
 </div>
 
-
-{{-- Card con Omar e Will --}}
+<!--Card con Omar e Will
 
 <div class="card">
     <div class="card-image">
@@ -47,7 +46,7 @@
     <p class="footer">Redatto il {{ $data }} da {{ $user }}</p>
 </div>
 
-<!--CARD DI WILLIAM-->
+CARD DI WILLIAM-->
 
 
 <!--<div class="class card">

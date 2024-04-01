@@ -2,23 +2,26 @@
 
     <x-navbar />
 
-    <center>
-
-    </center>
+    
 
 
-{{-- Form Login --}}
+    {{-- Form Login --}}
 
 
     <div
-        style=" width:700px; height:500px;border-radius: 40px;padding: 25px 35px;border: 5px solid rgb(255, 255, 255);box-shadow: rgba(133, 189, 215, 0.8784313725) 0px 30px 30px -20px;margin: 20px;;background: #F8F9FD;background: linear-gradient(0deg, rgb(255, 255, 255) 0%, rgb(244, 247, 251) 100%);margin-left:450px;margin-top:40px">
+        style=" width:1000px; height:500px;border-radius: 40px;padding: 25px 35px;border: 5px solid rgb(255, 255, 255);box-shadow: rgba(133, 189, 215, 0.8784313725) 0px 30px 30px -20px;margin: 20px;;background: #F8F9FD;background: linear-gradient(0deg, rgb(255, 255, 255) 0%, rgb(244, 247, 251) 100%);margin-left:450px;margin-top:40px">
         <div class="heading">Login</div>
-        <form action="/login" class="form" method="POST">
+        <form action="/login" class="form" method="post">
             @csrf
-            <input required="" class="input" type="email" name="email" id="email" placeholder="E-mail">
-            <input required="" class="input" type="password" name="password" id="password" placeholder="Password">
+            <input class="input" type="text" id="email" name="email" required placeholder="E-mail">
+            <input class="input" type="password" id="password" name="password" required placeholder="Password">
+
+            @error('email')
+            <span class="text-danger">{{ $message }}</span>
+        @enderror
+
             <span class="forgot-password"><a href="#">Hai dimenticato la password ?</a></span>
-            <input class="login-button" type="submit" value="Sign In">
+            <input class="login-button" type="submit" value="ACCEDI">
 
         </form>
 

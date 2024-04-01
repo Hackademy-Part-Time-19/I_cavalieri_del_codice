@@ -433,16 +433,16 @@ body {
 
 .F2contenitoreA {
   display: flex;
-  height: 80vh;
-  width: 200%;
+  height: 60vh;
+  
   background-color: yellow;
 }
 
 .destraA {
 
-  width: 2000%;
+  background-color: red;
   /* Imposta la larghezza della parte destra */
-  background-color: black;
+  width: 100%;
 
 
 }
@@ -875,6 +875,7 @@ ul {
   font-size: 11px;
   color: #0099ff;
   text-decoration: none;
+  
 }
 
 .form .login-button {
