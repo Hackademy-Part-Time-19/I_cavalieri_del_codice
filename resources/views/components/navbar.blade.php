@@ -157,7 +157,7 @@
                                 TECNOLOGIA
                             </a>
 
-                            <ul class="dropdown-menu" style="margin-left: 100px">
+                            <ul class="dropdown-menu" style="margin-left: 50px">
                                 <li><a class="dropdown-item" href="#">Smartphone</a></li>
                                 <li><a class="dropdown-item" href="#">Schermi</a></li>
                                 <li><a class="dropdown-item" href="#">Console</a></li>
@@ -176,7 +176,7 @@
                                 TENDENZA
                             </a>
 
-                            <ul class="dropdown-menu" style="margin-left: 100px">
+                            <ul class="dropdown-menu" style="margin-left: 50px">
                                 <li><a class="dropdown-item" href="#">Animali</a></li>
                                 <li><a class="dropdown-item" href="#">Moda </a></li>
                                 <li><a class="dropdown-item" href="#">Medicina</a></li>
@@ -195,7 +195,7 @@
                                 NEWS
                             </a>
 
-                            <ul class="dropdown-menu" style="margin-left: 100px">
+                            <ul class="dropdown-menu" style="margin-left: 50px">
                                 <li><a class="dropdown-item" href="#">Notizie del mondo</a></li>
                                 <li><a class="dropdown-item" href="#">Politica</a></li>
                                 <li><a class="dropdown-item" href="#">Finanza</a></li>
@@ -214,7 +214,7 @@
                                 ARTICOLI
                             </a>
 
-                            <ul class="dropdown-menu" style="margin-left: 100px">
+                            <ul class="dropdown-menu" style="margin-left: 50px">
                                 <li><a class="dropdown-item" href="{{ route('article.create') }}">Crea un articolo</a>
                                 </li>
                                 <li><a class="dropdown-item" href="{{ route('article.index') }}">Tutti gli articoli</a>
@@ -234,7 +234,7 @@
                                 SELEZIONA LINGUA
                             </a>
 
-                            <ul class="dropdown-menu" style="margin-left: 100px">
+                            <ul class="dropdown-menu" style="margin-left: 50px">
                                 <li><a class="dropdown-item" href="{{ route('homepage') }}">Italiano</a></li>
                                 <li><a class="dropdown-item" href="{{ route('homepageinglese') }}">Inglese</a></li>
                                 <li><a class="dropdown-item" href="{{ route('homepagegiapponese') }}">Giapponesi</a>
@@ -261,7 +261,7 @@
                                 BENVENUTO {{ auth()->user()->name }}
                             </a>
 
-                            <ul class="dropdown-menu" style="margin-left: 100px">
+                            <ul class="dropdown-menu" style="margin-left: 50px">
                                 <li><a class="dropdown-item" href="#">
                                         <form action="/logout" method="post">
                                             @csrf
