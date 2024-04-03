@@ -1,10 +1,144 @@
-<!--NON LOGATO-->
+<!--PROVA-->
+
+<nav class="navbar bg-body-tertiary fixed-top" >
+    <div class="container-fluid">
+
+      <a class="navbar-brand" href="/" >
+
+        <img src="https://s3-eu-west-1.amazonaws.com/tpd/logos/5f2bcf6dd70c1600011198c5/0x0.png" width="100px" alt="">
+
+      </a>
+
+      <button style="background-color: white" class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+        <span  class="navbar-toggler-icon"></span>
+      </button>
+
+
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        
+        
+        <div class="offcanvas-header" style="background-color: aqua">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">AULAB POST</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+
+
+        <div class="offcanvas-body" style="background-color: aqua">
+
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  ACCEDI
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="{{ route('login') }}">LOGIN</a></li>
+
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+
+                  <li><a class="dropdown-item" href="{{ route('register') }}">REGISTRATI</a></li>
+                </ul>
+              </li>
+            </ul>
+
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  SELEZIONA LINGUA
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="{{ route('homepage') }}">ITALIANO</a></li>
+
+                  
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+
+                  <li><a class="dropdown-item" href="{{ route('homepageinglese') }}">INGLESE</a></li>
+
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+
+                  <li><a class="dropdown-item" href="{{ route('homepagegiapponese') }}">GIAPPONESE</a></li>
+
+
+
+                </ul>
+              </li>
+            </ul>
+
+
+            <li class="nav-item dropdown" style="margin-top: 10px">
+
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                CATEGORIA
+              </a>
+              <ul class="dropdown-menu">
+
+                <li><a class="dropdown-item" href="#">TECNOLOGIA</a></li>
+
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+
+                <li><a class="dropdown-item" href="#">SMARTPHONE</a></li>
+
+                <li>
+                    <hr class="dropdown-divider">
+                  </li>
+  
+                  <li><a class="dropdown-item" href="#">SCHERMI</a></li>
+
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+  
+                  <li><a class="dropdown-item" href="#">CONSOLE</a></li>
+
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+  
+                  <li><a class="dropdown-item" href="#">COMPUTER</a></li>
+
+
+              </ul>
+            </li>
+          </ul>
+
+
+          <form class="d-flex mt-3" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="CERCA">
+
+            <button class="btn btn-outline-success" type="submit">CERCA</button>
+
+          </form>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--NON LOGATO
 @guest
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
 
         <div class="container-fluid">
 
-            <!--LOGO-->
+            LOGO
 
             <a class="navbar-brand" href="/"><img
                     src="https://s3-eu-west-1.amazonaws.com/tpd/logos/5f2bcf6dd70c1600011198c5/0x0.png" width="100px"
@@ -14,7 +148,7 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <!--VOCI MENU TECNOLOGIA-->
+            VOCI MENU TECNOLOGIA
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
@@ -35,7 +169,7 @@
                         </div>
                     </li>
 
-                    <!--VOCI MENU TENDENZA-->
+                    VOCI MENU TENDENZA
 
                     <li class="nav-item">
 
@@ -54,7 +188,7 @@
                         </div>
                     </li>
 
-                    <!--VOCI MENU NEWS -->
+                    VOCI MENU NEWS 
 
                     <li class="nav-item dropdown">
 
@@ -73,7 +207,7 @@
                         </div>
                     </li>
 
-                    <!--VOCI MENU LOGIN/REGISTRATI -->
+                    VOCI MENU LOGIN/REGISTRATI 
 
                     <li class="nav-item dropdown">
 
@@ -91,7 +225,7 @@
                     </li>
 
 
-                    <!--VOCI MENU LINGUA -->
+                    VOCI MENU LINGUA 
                     
 
                     <li class="nav-item dropdown">
@@ -111,7 +245,7 @@
                         </div>
                     </li>
 
-                    <!--BARRA DI RICERCA -->
+                    BARRA DI RICERCA 
 
                     <form class="d-flex" role="search" style="margin-left: 100px">
                         <input style="width: 200px" class="form-control me-2" type="search" placeholder="Search"
