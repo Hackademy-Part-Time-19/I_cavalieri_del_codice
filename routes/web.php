@@ -15,9 +15,7 @@ use App\Http\Controllers\ArticleController;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+
 
 Route::get('/',[PublicController::class,'homepage'])->name('homepage') ;
 

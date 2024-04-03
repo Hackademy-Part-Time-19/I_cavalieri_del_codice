@@ -26,7 +26,7 @@ class ArticleController extends Controller
     {
 
         $articles = $category->articles()->orderby('created_at', 'desc')->get();
-        return view('article.by-category', compact('category', 'articles'));
+        return view('articles.by-category', compact('category', 'articles'));
 
     }
 
