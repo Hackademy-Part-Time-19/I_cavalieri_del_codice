@@ -15,6 +15,16 @@ class PublicController extends Controller
 
     public function homepage (){
         $articles= Article::orderBy('created_at' , 'desc')->take(4)->get();
+        
+if(auth()->user()!=null){
+
+    $articles= auth()->user()->articles()->orderBy('created_at' , 'desc')->take(4)->get(); 
+
+}
+
+
+
+        
         return view ('welcome' , compact ('articles'));
     }
     public function __construct() {

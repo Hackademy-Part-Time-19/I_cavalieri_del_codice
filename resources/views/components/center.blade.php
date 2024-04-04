@@ -411,6 +411,10 @@
         <span class="marquee">♠♠♠♠ULTIME RECENSIONI DAGLI UTENTI&nbsp;</span>
     </div>
 
+   {{$slot}}
+
 
 
 @endauth
+
+

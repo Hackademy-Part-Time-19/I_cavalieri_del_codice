@@ -9,8 +9,7 @@
             <div class="row align-items-center">
                 <div class="col-12 col-md-8 col-lg-5 mb-5">
                     <div>
-                        <h2 class="display-5 fw-bold mb-4 text-white">ACCEDI AL NOSTRO BLOG PER CONOSCERE LE 
-                            SULLE NOVITÁ TECH</h2>
+                        <h2 class="display-5 fw-bold mb-4 text-white">ACCEDI AL NOSTRO BLOG PER CONOSCERE TUTTE LE NOVITÁ TECH</h2>
 
                         <p class="mb-0 text-white">TORNA ALLA HOME</p>
 
