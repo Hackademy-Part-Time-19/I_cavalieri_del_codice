@@ -1,71 +1,81 @@
 <x-layout>
 
-    <x-navbar />
+    
 
-    {{-- Form registrazione --}}
+    <section class="position-relative py-5 overflow-hidden">
+        <div class="d-none d-md-block position-absolute top-0 start-0 bg-primary w-75 h-100"></div>
+        <div class="d-md-none position-absolute top-0 start-0 bg-primary w-100 h-100"></div>
+        <div class="container position-relative mx-auto">
+            <div class="row align-items-center">
 
+                <div class="col-12 col-md-8 col-lg-5 mb-5">
+                    <div>
 
-    <div
-        style=" width:1000px; height:600px;border-radius: 40px;padding: 25px 35px;border: 5px solid rgb(255, 255, 255);box-shadow: rgba(133, 189, 215, 0.8784313725) 0px 30px 30px -20px;margin: 20px;;background: #F8F9FD;background: linear-gradient(0deg, rgb(255, 255, 255) 0%, rgb(244, 247, 251) 100%);margin-left:450px;margin-top:40px">
-        <div class="heading">Registrazione</div>
-        <form action="/register" class="form" method="post">
-            @csrf
-            <input class="input" type="text" id="name" name="name" required placeholder="Name">
+                        <h2 class="display-5 fw-bold mb-4 text-white">UNISCITI AL NOSTRO BLOG SARAI SEMPRE AGGIORNATO
+                            SULLE NOVITÁ TECH</h2>
+                        <p class="mb-0 text-white">TORNA ALLA HOME</p>
 
-            @error('name')
-                <span class="text-danger">{{ $message }}</span>
-            @enderror
+                        <a class="navbar-brand" href="/"><img
+                            src="https://s3-eu-west-1.amazonaws.com/tpd/logos/5f2bcf6dd70c1600011198c5/0x0.png" width="100px"
+                            alt="Logo"></a>
+                    </div>
+                </div>
 
-            <input class="input" type="email" type="text" id="email" name="email" required
-                placeholder="E-mail">
+                <div class="col-12 col-md-10 col-lg-5 ms-auto">
+                    <div class="p-5 bg-light rounded text-center">
+                        <form action="/register" method="post">
 
-            @error('email')
-                <span class="text-danger">{{ $message }}</span>
-            @enderror
+                            <h1 class="text-muted">REGISTRATI</h1>
 
-            <input class="input" type="password" id="password" name="password" required placeholder="Password">
+                            <h3 class="fw-bold mb-5">Crea un nuovo account</h3>
 
-            <input class="input" type="password" id="password" name="password_confirmation" required
-                placeholder="Conferma la tua password">
+                            @csrf
 
-            @error('password')
-                <span class="text-danger">{{ $message }}</span>
-            @enderror
+                            <input class="form-control mb-2" type="text" id="name" name="name" required
+                                placeholder="Nome">
 
+                            @error('name')
+                                <span class="text-danger">{{ $message }}</span>
+                            @enderror
 
-            <span class="forgot-password"><a href="#">Hai dimenticato la password ?</a></span>
-            <input class="login-button" type="submit" value="REGISTRATI">
+                            <input class="form-control mb-2" type="email" type="text" id="email" name="email"
+                                required placeholder="E-mail">
 
-        </form>
+                            @error('email')
+                                <span class="text-danger">{{ $message }}</span>
+                            @enderror
 
-        <div class="social-account-container">
-            <span class="title"></span>
-            <div class="social-accounts">
-                <button class="social-button google">
-                    <svg class="svg" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 488 512">
-                        <path
-                            d="M488 261.8C488 403.3 391.1 504 248 504 110.8 504 0 393.2 0 256S110.8 8 248 8c66.8 0 123 24.5 166.3 64.9l-67.5 64.9C258.5 52.6 94.3 116.6 94.3 256c0 86.5 69.1 156.6 153.7 156.6 98.2 0 135-70.4 140.8-106.9H248v-85.3h236.1c2.3 12.7 3.9 24.9 3.9 41.4z">
-                        </path>
-                    </svg></button>
-                <button class="social-button apple">
-                    <svg class="svg" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512">
-                        <path
-                            d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z">
-                        </path>
-                    </svg>
-                </button>
-                <button class="social-button twitter">
-                    <svg class="svg" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512">
-                        <path
-                            d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z">
-                        </path>
-                    </svg>
-                </button>
+                            <input class="form-control mb-2" type="password" id="password" name="password" required
+                                placeholder="Password" style="background-image: url(" moz-extension:=""
+                                background-position:="" calc="" background-size:="" background-repeat:=""
+                                no-repeat="" transition:="" background-position="" background-size="">
+
+                            <input class="form-control mb-2" type="password" id="password" name="password_confirmation"
+                                required placeholder="Conferma la tua password" style="background-image: url("
+                                moz-extension:="" background-position:="" calc="" background-size:=""
+                                background-repeat:="" no-repeat="" transition:="" background-position=""
+                                background-size="">
+
+                            @error('password')
+                                <span class="text-danger">{{ $message }}</span>
+                            @enderror
+
+                            <label class="d-inline-block mb-4">
+                                <input class="form-check-input me-2" type="checkbox" name="terms" value="1">
+                                <small class="text-muted">Iscrivendoti accetti i nostri <a
+                                        href="https://www.camera.it/application/xmanager/projects/leg17/commissione_internet/dichiarazione_dei_diritti_internet_pubblicata.pdf">Termini,
+                                        dati
+                                        Politica</a> e <a
+                                        href="https://www.cookiebot.com/it/cookie-policy-gdpr/?utm_source=google&utm_medium=cpc&utm_term=cookies%20policy&utm_campaign=cb_dm_it_all_generic_search&utm_content=it-it-cookie-policy&campaign_id=15312105586&adset_id=135611345171&ad_id=635251400848&matchtype=p&utm_device=c&gad_source=1&gclid=CjwKCAjw_LOwBhBFEiwAmSEQAcSfftZqTbSnpQ-zgb6AZxTnROw4gVdxX2v4Bg-ip1_2QMa5MjFREBoCzJwQAvD_BwE">Politica
+                                        dei Cookies</a>.</small>
+                            </label>
+                            <button class="btn btn-primary py-2 w-100">Registrati</button>
+                        </form>
+                    </div>
+                </div>
             </div>
         </div>
-        <span class="agreement"><a href="#">Oppure accedi con</a></span>
-    </div>
-
+    </section>
 
     <!--LOGO ICONE-->
     <div class="row" style="margin-top: 50px">
@@ -120,10 +130,10 @@
             </li>
         </ul>
 
-
-
     </div>
     </div>
+
+    <!--FINE LOGO
 
 
 
