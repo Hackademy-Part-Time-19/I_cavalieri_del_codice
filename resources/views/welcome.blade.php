@@ -5,14 +5,23 @@
     
 
     <x-center>
-        
-    <div class="container ">
 
-        <div class="row card-deck">
+
+
+        
+    <div class="container " >
+
+        <div class="row card-deck" >
+
+            
 
             @foreach ($articles as $article)
 
+            
+            <div class="col-6 .col-sm-6 .col-md-6 .col-lg-6" style="height: auto">
             <x-card
+
+
                 title="{{ $article->title }}"
                 subtitle="{{ $article->subtitle }}"
                 image="{{ $article->image }}"
@@ -25,8 +34,11 @@
 
            
             />
+
+        </div>
             
             @endforeach
+        
 
         </div>
 

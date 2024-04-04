@@ -1,5 +1,5 @@
 <!--MESSAGGIO SCOREVOLE-->
-@guest
+
     <div id="animated-text-strip">
         <span class="marquee">ACCEDDI PER VEDERE GLI ULTIMI ARTICOLI INSERITI&nbsp;</span>
         <span class="marquee">♠♠♠♠ACCEDDI PER VEDERE GLI ULTIMI ARTICOLI INSERITI&nbsp;</span>
@@ -400,7 +400,7 @@
     </div>
 
 
-@endguest
+
 
 @auth
 
@@ -411,7 +411,14 @@
         <span class="marquee">♠♠♠♠ULTIME RECENSIONI DAGLI UTENTI&nbsp;</span>
     </div>
 
-   {{$slot}}
+    
+
+    
+
+
+            {{$slot}}
+            
+          
 
 
 
