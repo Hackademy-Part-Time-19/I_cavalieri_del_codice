@@ -1,6 +1,6 @@
 <x-layout>
 
-    <x-navbar />
+    <x-navabar />
     
     <div class="container-fluid p-5 bg-info text-center text-white">
         <div class="row justify-content-center">
@@ -48,7 +48,7 @@
                    <textarea name="body" id="body" cols="30" rows="7">{{ old('body') }}</textarea>
                    </div>
                    <div class="mt-2 d-flex justify-content-center">
-                    <button class="btn btn-info text-white">Inserisci un articolo</button>
+                    <button type="submit" class="btn btn-info text-white">Inserisci un articolo</button>
                    </div>
                 </form>
             </div>

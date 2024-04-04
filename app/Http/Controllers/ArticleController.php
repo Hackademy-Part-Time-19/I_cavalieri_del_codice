@@ -2,10 +2,11 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Controllers\Auth;
+
 use App\Models\Article;
 use App\Models\Category;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class ArticleController extends Controller
 {
@@ -58,7 +59,7 @@ class ArticleController extends Controller
             'category_id'=> $request->category,
             'user_id' => Auth::user()->id,
         ]);
-        return redirect(route('homepage'))->with('message' ,'Articolo creato correttamente');
+        return redirect()->back()->with('message' ,'Articolo creato correttamente');
     }
 
     /**

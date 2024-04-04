@@ -1,6 +1,6 @@
 <x-layout>
 
-    <x-navbar />
+    <x-navabar />
 
     <div class="container-fluid p-5 bg-info text-center text-white">
         <div class="row justify-content-center">

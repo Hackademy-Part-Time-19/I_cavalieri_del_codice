@@ -38,7 +38,7 @@ Route::post('/careers/submit' , [PublicController::class , 'careersSubmit'])->na
 
 Route::get('/article/index' , [ArticleController::class, 'index'])->name('article.index');
 
-Route::get('/article/store' , [ArticleController::class, 'store'])->name('article.store');
+Route::post('/article/store' , [ArticleController::class, 'store'])->name('article.store');
 
 Route::get('/article/show/{article}' , [ArticleController::class, 'show'])->name('article.show');
 
