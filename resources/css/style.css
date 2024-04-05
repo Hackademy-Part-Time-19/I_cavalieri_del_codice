@@ -1,13 +1,13 @@
 .corpo {
 
-  background-color: rgb(13, 110, 253);
+  background-color: #77B0AA;
   height: 100%;
   margin-top: 0px;
 }
 
 .container-fluid {
 
-  background-color: #41C9E2;
+  background-color: #003C43;
 
 }
 
@@ -39,7 +39,7 @@
 
 /* Styles for the sake of the demonstration */
 #animated-text-strip {
-  background: #387ADF;
+  background: #135D66;
   padding: 1rem 0;
 }
 
