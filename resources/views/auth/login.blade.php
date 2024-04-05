@@ -3,12 +3,12 @@
     
     <section class="position-relative py-5 overflow-hidden">
 
-        <div class="d-none d-md-block position-absolute top-0 start-0 bg-primary w-75 h-100"></div>
-        <div class="d-md-none position-absolute top-0 start-0 bg-primary w-100 h-100"></div>
-        <div class="container position-relative mx-auto">
+        <div  class="d-none d-md-block position-absolute top-0 start-0 bg-primary w-75 h-100"></div>
+        <div  class="d-md-none position-absolute top-0 start-0 bg-primary w-100 h-100"></div>
+        <div  class="container position-relative mx-auto">
             <div class="row align-items-center">
-                <div class="col-12 col-md-8 col-lg-5 mb-5">
-                    <div>
+                <div  class="col-12 col-md-8 col-lg-5 mb-5">
+                    <div >
                         <h2 class="display-5 fw-bold mb-4 text-white">ACCEDI AL NOSTRO BLOG PER CONOSCERE TUTTE LE NOVITÁ TECH</h2>
 
                         <p class="mb-0 text-white">TORNA ALLA HOME</p>
