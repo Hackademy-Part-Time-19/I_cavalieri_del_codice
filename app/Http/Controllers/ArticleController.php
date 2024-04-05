@@ -50,15 +50,32 @@ class ArticleController extends Controller
             'body'=> 'required|min:10',
             'image'=> 'image|required',
             'category'=> 'required',
+            /*user story 5.1*/
+            'tags'=> 'required',
+            /*user story 5.1*/
         ]);
+
+        $path=$request->file('image')->store('images','public');
+        
         $article = Article::create([
             'title'=> $request->title,
             'subtitle'=> $request->subtitle,
             'body'=> $request->body,
-            'image'=> $request->file('image')->store('pulic/images'),
+            'image'=>'storage/'.$path, 
             'category_id'=> $request->category,
             'user_id' => Auth::user()->id,
         ]);
+
+        /*user story 5.1 inizio*/
+
+        $tags = explode(',' , $request->tags);
+
+        foreach ($tags as $i => $tag) {
+            $tags[$i] = trim($tag);
+        }
+
+        /*user story 5.1 fine*/
+
         return redirect()->back()->with('message' ,'Articolo creato correttamente');
     }
 

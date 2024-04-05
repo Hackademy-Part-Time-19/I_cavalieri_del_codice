@@ -1,3 +1,17 @@
+@auth
+
+    <div id="animated-text-strip">
+        <span class="marquee">ULTIME RECENSIONI DAGLI UTENTI&nbsp;</span>
+        <span class="marquee">♠♠♠♠ULTIME RECENSIONI DAGLI UTENTI&nbsp;</span>
+        <span class="marquee">♠♠♠♠ULTIME RECENSIONI DAGLI UTENTI&nbsp;</span>
+        <span class="marquee">♠♠♠♠ULTIME RECENSIONI DAGLI UTENTI&nbsp;</span>
+    </div>
+
+            {{$slot}}
+            
+        
+@endauth
+
 <!--MESSAGGIO SCOREVOLE-->
 
     <div id="animated-text-strip">
@@ -402,26 +416,6 @@
 
 
 
-@auth
 
-    <div id="animated-text-strip">
-        <span class="marquee">ULTIME RECENSIONI DAGLI UTENTI&nbsp;</span>
-        <span class="marquee">♠♠♠♠ULTIME RECENSIONI DAGLI UTENTI&nbsp;</span>
-        <span class="marquee">♠♠♠♠ULTIME RECENSIONI DAGLI UTENTI&nbsp;</span>
-        <span class="marquee">♠♠♠♠ULTIME RECENSIONI DAGLI UTENTI&nbsp;</span>
-    </div>
-
-    
-
-    
-
-
-            {{$slot}}
-            
-          
-
-
-
-@endauth
 
 

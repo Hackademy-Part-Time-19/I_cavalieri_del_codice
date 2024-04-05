@@ -6,7 +6,7 @@
 
         <div class="col-12 col-ml-12 col-sm-12 p-0" style="margin: 10px" >
             <div  class="card ml-2" style="background-color: #{{ dechex(mt_rand(0, 0xffffff)) }};height: 850px;">
-                <img src="{{ asset('storage/logo.jpg') }}" class="card-img-top" alt="non disponibile"
+                <img src="{{ $image }}" class="card-img-top" alt="non disponibile"
                     style="max-height: 600px;">
                 <div class="card-body" style="max-height: 300px; overflow-y: scroll;">
                     <h5 class="card-title">{{ $title }}</h5>

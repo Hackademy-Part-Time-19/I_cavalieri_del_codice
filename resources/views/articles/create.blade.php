@@ -23,18 +23,37 @@
                 @endif
                 <form action="{{ route('article.store') }}" method="post" class="card p-5 shadow" enctype="multipart/form-data">
                    @csrf 
+
                    <div class="mb-3">
                     <label for="title" class="form-label">Titolo:</label>
                     <input type="text" name="title" class="form-control" id="title" value="{{ old('title')}}">
                    </div>
+
                    <div class="mb-3">
                     <label for="subtitle" class="form-label">Sottotitolo:</label>
                     <input type="text" name="subtitle" class="form-control" id="subtitle" value="{{ old('subtitle')}}">
                    </div>
+
                    <div class="mb-3">
                     <label for="image" class="form-label">Immagine:</label>
                     <input type="file" name="image" class="form-control" id="image">
                    </div>
+
+                   <!--user story 5.1 inizio-->
+
+                   <div class="mb-3">
+                    <label for="tags" class="form-label">Tags:</label>
+                    <input  name="tags" class="form-control" id="tags" value="{{old('tags')}}">
+                    <span class="small fst-italic">Dividi ogni tag con una virgola</span>
+                   </div>
+
+                   
+
+                   <!--user story 5.1 fine-->
+
+
+
+
                    <div class="mb-3">
                    <label for="category" class="form-label">Categoria:</label>
                    <select name="category" id="category" class="form-control text-capitalize">

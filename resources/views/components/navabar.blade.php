@@ -199,7 +199,10 @@
                                 <li><a class="dropdown-item" href="">Lavora con noi</a></li>
 
                                 <button class="logout" type="submit">ESCI</button>
+
+                                        </form>
                                 </a>
+                            
                     </li>
 
                 </ul>

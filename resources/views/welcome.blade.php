@@ -24,7 +24,7 @@
 
                 title="{{ $article->title }}"
                 subtitle="{{ $article->subtitle }}"
-                image="{{ $article->image }}"
+                image="{{ $article->image }}" 
                 body="{{ $article->body }}"
                 category="{{ $article->name }}"
                 data="{{ $article->created_at->format('d/m/Y') }}"

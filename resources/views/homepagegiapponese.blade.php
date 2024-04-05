@@ -20,264 +20,223 @@
     <h1>日本語</h1>
 
     <!--NON LOGATO-->
-    @guest
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+@guest
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
 
-            <div class="container-fluid">
+    <div class="container-fluid">
 
-                <!--LOGO-->
+        <!--LOGO-->
 
-                <a class="navbar-brand" href="/"><img
-                        src="https://s3-eu-west-1.amazonaws.com/tpd/logos/5f2bcf6dd70c1600011198c5/0x0.png" width="100px"
-                        alt="Logo"></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+        <a class="navbar-brand" href="/"><img
+                src="https://s3-eu-west-1.amazonaws.com/tpd/logos/5f2bcf6dd70c1600011198c5/0x0.png" width="100px"
+                alt="Logo"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-                <!--VOCI MENU TECNOLOGIA-->
+        <!--VOCI MENU TECNOLOGIA-->
 
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <div class="dropdown">
-                                <a style="margin-left: 100px" class="btn btn-primary dropdown-toggle" href="#"
-                                    role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    テクノロジー
-                                </a>
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <div class="dropdown">
+                        <a style="margin-left: 50px" class="btn btn-primary dropdown-toggle" href="#"
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            CATEGORIE
+                        </a>
 
-                                <ul class="dropdown-menu" style="margin-left: 100px">
-                                    <li><a class="dropdown-item" href="#">スマートフォン</a></li>
-                                    <li><a class="dropdown-item" href="#">スクリーン</a></li>
-                                    <li><a class="dropdown-item" href="#">コンソール</a></li>
-                                    <li><a class="dropdown-item" href="#">コンピューター</a></li>
-                                </ul>
-                            </div>
-                        </li>
+                        <ul class="dropdown-menu" style="margin-left: 50px">
+                            <li><a class="dropdown-item" href="#">Tecnologia</a></li>
+                            <li><a class="dropdown-item" href="#">Smartphone</a></li>
+                            <li><a class="dropdown-item" href="#">Schermi</a></li>
+                            <li><a class="dropdown-item" href="#">Console</a></li>
+                            <li><a class="dropdown-item" href="#">Computer</a></li>
+                        </ul>
+                    </div>
+                </li>
 
-                        <!--VOCI MENU TENDENZA-->
 
-                        <li class="nav-item">
+                <!--VOCI MENU LOGIN/REGISTRATI-->
 
-                            <div class="dropdown">
-                                <a style="margin-left: 100px" class="btn btn-primary dropdown-toggle" href="#"
-                                    role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    傾向
-                                </a>
+                <li class="nav-item dropdown">
 
-                                <ul class="dropdown-menu" style="margin-left: 100px">
-                                    <li><a class="dropdown-item" href="#">動物</a></li>
-                                    <li><a class="dropdown-item" href="#">ファッション </a></li>
-                                    <li><a class="dropdown-item" href="#">薬</a></li>
-                                    <li><a class="dropdown-item" href="#">スポーツ</a></li>
-                                </ul>
-                            </div>
-                        </li>
+                    <div class="dropdown">
+                        <a style="margin-left: 100px" class="btn btn-primary dropdown-toggle" href="#"
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            ACCEDI
+                        </a>
 
-                        <!--VOCI MENU NEWS -->
+                        <ul class="dropdown-menu" style="margin-left: 100px">
+                            <li><a class="dropdown-item" href="{{ route('login') }}">Login</a></li>
+                            <li><a class="dropdown-item" href="{{ route('register') }}">Registrati</a></li>
+                        </ul>
+                    </div>
+                </li>
 
-                        <li class="nav-item dropdown">
 
-                            <div class="dropdown">
-                                <a style="margin-left: 100px" class="btn btn-primary dropdown-toggle" href="#"
-                                    role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    ニュース
-                                </a>
+                <!--VOCI MENU LINGUA-->
 
-                                <ul class="dropdown-menu" style="margin-left: 100px">
-                                    <li><a class="dropdown-item" href="#">世界のニュース</a></li>
-                                    <li><a class="dropdown-item" href="#">政治</a></li>
-                                    <li><a class="dropdown-item" href="#">ファイナンス</a></li>
-                                    <li><a class="dropdown-item" href="#">星占い</a></li>
-                                </ul>
-                            </div>
-                        </li>
 
-                        <!--VOCI MENU LOGIN/REGISTRATI -->
+                <li class="nav-item dropdown">
 
-                        <li class="nav-item dropdown">
+                    <div class="dropdown">
+                        <a style="margin-left: 100px" class="btn btn-primary dropdown-toggle" href="#"
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            SELEZIONA LINGUA
+                        </a>
 
-                            <div class="dropdown">
-                                <a style="margin-left: 100px" class="btn btn-primary dropdown-toggle" href="#"
-                                    role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    ログイン
-                                </a>
+                        <ul class="dropdown-menu" style="margin-left: 100px">
+                            <li><a class="dropdown-item" href="{{ route('homepage') }}">Italiano</a></li>
+                            <li><a class="dropdown-item" href="{{ route('homepageinglese') }}">Inglese</a></li>
+                            <li><a class="dropdown-item" href="{{ route('homepagegiapponese') }}">Giapponesi</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
 
-                                <ul class="dropdown-menu" style="margin-left: 100px">
-                                    <li><a class="dropdown-item" href="{{ route('login') }}">ログイン</a></li>
-                                    <li><a class="dropdown-item" href="{{ route('register') }}">サインイン</a></li>
-                                </ul>
-                            </div>
-                        </li>
+                <!--BARRA DI RICERCA-->
 
-                        <!--VOCI MENU LINGUA -->
+                <form class="d-flex" role="search" style="margin-left: 100px">
+                    <input style="width: 200px" class="form-control me-2" type="search" placeholder="Search"
+                        aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Cerca</button>
+                </form>
+            </ul>
 
-                        <li class="nav-item dropdown">
+        </div>
+    </div>
+</nav>
 
-                            <div class="dropdown">
-                                <a style="margin-left: 100px" class="btn btn-primary dropdown-toggle" href="#"
-                                    role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    セレツィオナ・リンガ
-                                </a>
+@endguest
 
-                                <ul class="dropdown-menu" style="margin-left: 100px">
-                                    <li><a class="dropdown-item" href="{{ route('homepage') }}">イタリアの</a></li>
-                                    <li><a class="dropdown-item" href="{{ route('homepageinglese') }}">英語</a></li>
-                                    <li><a class="dropdown-item" href="{{ route('homepagegiapponese') }}">日本語</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
+<!--AUTORIZZATO-->
 
-                        <!--BARRA DI RICERCA -->
+@auth
 
-                        <form class="d-flex" role="search" style="margin-left: 100px">
-                            <input style="width: 200px" class="form-control me-2" type="search" placeholder="検索"
-                                aria-label="Search">
-                            <button class="btn btn-outline-success" type="submit">検索</button>
-                        </form>
-                </div>
-            </div>
-        </nav>
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
 
-    @endguest
+    <div class="container-fluid">
 
-    <!--AUTORIZZATO-->
+        <!--LOGO-->
 
-    @auth
+        <a class="navbar-brand" href="/"><img
+                src="https://s3-eu-west-1.amazonaws.com/tpd/logos/5f2bcf6dd70c1600011198c5/0x0.png" width="100px"
+                alt="Logo"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <!--VOCI MENU TECNOLOGIA-->
 
-            <div class="container-fluid">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
-                <!--LOGO-->
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <div class="dropdown">
+                        <a style="margin-left: 50px" class="btn btn-primary dropdown-toggle" href="#"
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            CATEGORIA
+                        </a>
 
-                <a class="navbar-brand" href="/"><img
-                        src="https://s3-eu-west-1.amazonaws.com/tpd/logos/5f2bcf6dd70c1600011198c5/0x0.png" width="100px"
-                        alt="Logo"></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+                        <ul class="dropdown-menu" style="margin-left: 50px">
+                            <li><a class="dropdown-item" href="#">Tecnologia</a></li>
+                            <li><a class="dropdown-item" href="#">Smartphone</a></li>
+                            <li><a class="dropdown-item" href="#">Schermi</a></li>
+                            <li><a class="dropdown-item" href="#">Console</a></li>
+                            <li><a class="dropdown-item" href="">Computer</a></li>
+                        </ul>
+                    </div>
+                </li>
 
-                <!--VOCI MENU TECNOLOGIA-->
 
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <div class="dropdown">
-                                <a style="margin-left: 100px" class="btn btn-primary dropdown-toggle" href="#"
-                                    role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    テクノロジー
-                                </a>
+                <!--CREA ARTICOLO-->
 
-                                <ul class="dropdown-menu" style="margin-left: 100px">
-                                    <li><a class="dropdown-item" href="#">スマートフォン</a></li>
-                                    <li><a class="dropdown-item" href="#">スクリーン</a></li>
-                                    <li><a class="dropdown-item" href="#">コンソール</a></li>
-                                    <li><a class="dropdown-item" href="#">コンピューター</a></li>
-                                </ul>
-                            </div>
-                        </li>
+                <li class="nav-item dropdown">
 
-                        <!--VOCI MENU TENDENZA-->
+                    <div class="dropdown">
+                        <a style="margin-left: 50px" class="btn btn-primary dropdown-toggle" href="#"
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            ARTICOLI
+                        </a>
 
-                        <li class="nav-item">
+                        <ul class="dropdown-menu" style="margin-left: 50px">
+                            <li><a class="dropdown-item" href="{{ route('article.create') }}">Crea un articolo</a>
+                            </li>
+                            <li><a class="dropdown-item" href="{{ route('article.index') }}">Tutti gli articoli</a>
+                            </li>
 
-                            <div class="dropdown">
-                                <a style="margin-left: 100px" class="btn btn-primary dropdown-toggle" href="#"
-                                    role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    傾向
-                                </a>
+                        </ul>
+                </li>
 
-                                <ul class="dropdown-menu" style="margin-left: 100px">
-                                    <li><a class="dropdown-item" href="#">動物</a></li>
-                                    <li><a class="dropdown-item" href="#">ファッション</a></li>
-                                    <li><a class="dropdown-item" href="#">薬</a></li>
-                                    <li><a class="dropdown-item" href="#">スポーツ</a></li>
-                                </ul>
-                            </div>
-                        </li>
+                <!--VOCI MENU LINGUA-->
 
-                        <!--VOCI MENU NEWS -->
 
-                        <li class="nav-item dropdown">
+                <li class="nav-item dropdown">
 
-                            <div class="dropdown">
-                                <a style="margin-left: 100px" class="btn btn-primary dropdown-toggle" href="#"
-                                    role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    ニュース
-                                </a>
+                    <div class="dropdown">
+                        <a style="margin-left: 50px" class="btn btn-primary dropdown-toggle" href="#"
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            SELEZIONA LINGUA
+                        </a>
 
-                                <ul class="dropdown-menu" style="margin-left: 100px">
-                                    <li><a class="dropdown-item" href="#">世界のニュース</a></li>
-                                    <li><a class="dropdown-item" href="#">政治</a></li>
-                                    <li><a class="dropdown-item" href="#">ファイナンス</a></li>
-                                    <li><a class="dropdown-item" href="#">星占い</a></li>
-                                </ul>
-                            </div>
-                        </li>
+                        <ul class="dropdown-menu" style="margin-left: 50px">
+                            <li><a class="dropdown-item" href="{{ route('homepage') }}">Italiano</a></li>
+                            <li><a class="dropdown-item" href="{{ route('homepageinglese') }}">Inglese</a></li>
+                            <li><a class="dropdown-item" href="{{ route('homepagegiapponese') }}">Giapponesi</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
 
-                        <!--CREA ARTICOLO-->
+                <!--BARRA DI RICERCA-->
 
-                        <li class="nav-item dropdown">
+                <form class="d-flex" role="search" style="margin-left: 50px">
+                    <input style="width: 200px" class="form-control me-2" type="search" placeholder="Search"
+                        aria-label="Inizia la tua ricerca">
+                    <button class="btn btn-outline-success" type="submit">Cerca</button>
+                </form>
 
-                            <div class="dropdown">
-                                <a style="margin-left: 100px" class="btn btn-primary dropdown-toggle" href="#"
-                                    role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    記事
-                                </a>
+                <!--VOCI MENU LOGIN/REGISTRATI-->
 
-                                <ul class="dropdown-menu" style="margin-left: 100px">
-                                    <li><a class="dropdown-item" href="#">記事を作成する</a></li>
-                                    <li><a class="dropdown-item" href="#">すべての記事</a></li>
+                <li class="nav-item dropdown">
 
-                                </ul>
-                        </li>
+                    <div style="margin-left: 50px" class="dropdown">
+                        <a class="btn btn-primary dropdown-toggle" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            BENVENUTO {{ auth()->user()->name }}
+                        </a>
 
-                        <!--VOCI MENU LOGIN/REGISTRATI -->
+                        <ul class="dropdown-menu" style="margin-left: 50px">
+                            <li><a class="dropdown-item" href="#">
+                                    <form action="/logout" method="post">
+                                        @csrf
 
-                    <li class="nav-item dropdown">
+                            <li><a class="dropdown-item" href="">Admin</a></li>
 
-                        <div class="dropdown">
-                            <a style="margin-left: 100px" class="btn btn-primary dropdown-toggle" href="#"
-                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                ベンヴェヌート {{ auth()->user()->name }}
+                            <li><a class="dropdown-item" href="">Lavora con noi</a></li>
+
+                            <button class="logout" type="submit">ESCI</button>
                             </a>
+                </li>
 
-                            <ul class="dropdown-menu" style="margin-left: 100px">
-                                <li><a class="dropdown-item" href="#">
-                                        <form action="/logout" method="post">
-                                            @csrf
-
-                                <li><a class="dropdown-item" href="{{ route('homepageinglese') }}">ラヴォラ・コン・ノイ</a></li>
-                                <li><a class="dropdown-item" href="{{ route('homepagegiapponese') }}">アンミニストラトーレ</a>
-
-                                    <button class="logout" type="submit">外出します</button>
-                                    </a>
-                                </li>
-
-                            </ul>
-                        </div>
-                    </li>
-
-            </div>
-            </li>
-
-            <!--BARRA DI RICERCA -->
-
-            <form class="d-flex" role="search" style="margin-left: 100px">
-                <input style="width: 150px" class="form-control me-2" type="search" placeholder="近く"
-                    aria-label="Inizia la tua ricerca">
-                <button class="btn btn-outline-success" type="submit">近く</button>
-            </form>
+            </ul>
         </div>
-        </div>
-    </nav>
+        </li>
+
+    </div>
+    </li>
+    </div>
+    </div>
+</nav>
+
+
+
+
+@endauth
 
 
     @endauth

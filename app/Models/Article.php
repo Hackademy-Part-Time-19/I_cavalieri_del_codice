@@ -2,11 +2,12 @@
 
 namespace App\Models;
 
-use Laravel\Scout\Searchable;
+use App\Models\Tag;
 use App\Models\User;
 use App\Models\Category;
-use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Laravel\Scout\Searchable;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 
 class Article extends Model
 {
@@ -39,5 +40,15 @@ class Article extends Model
         return $this->belongsTo(Category::class);
     }
 
+    public function tags(){
+
+        return $this->BelongsToMany(Tag::class);
+    }
+
     
 }
+
+
+     
+  
+
