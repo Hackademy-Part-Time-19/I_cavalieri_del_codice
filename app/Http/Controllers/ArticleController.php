@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 
+use App\Models\Tag;
 use App\Models\Article;
 use App\Models\Category;
 use Illuminate\Http\Request;
@@ -78,6 +79,18 @@ class ArticleController extends Controller
 
         foreach ($tags as $i => $tag) {
             $tags[$i] = trim($tag);
+        }
+
+        $tags = explode(',' , $request->tags);
+
+        foreach ($tags as  $tag) {
+            $newTag = Tag::updateOrCreate(
+
+                ['name' => $tag],
+                ['name' => strtolower($tag)],
+            );
+
+            $article->tags()->attach($newTag);
         }
 
         /*user story 5.1 fine*/
