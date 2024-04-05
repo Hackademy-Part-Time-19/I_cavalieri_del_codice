@@ -174,10 +174,10 @@
 
                     <!--BARRA DI RICERCA-->
 
-                    <form class="d-flex" role="search" style="margin-left: 50px">
+                    <form class="d-flex" method="GET" action="{{ route('article.search')}}" style="margin-left: 50px">
                         <input style="width: 200px" class="form-control me-2" type="search" placeholder="Search"
-                            aria-label="Inizia la tua ricerca">
-                        <button class="btn btn-outline-success" type="submit">Cerca</button>
+                            aria-label="Search" name="query">
+                        <button class="btn btn-outline-info" type="submit">Cerca</button>
                     </form>
 
                     <!--VOCI MENU LOGIN/REGISTRATI--> 
