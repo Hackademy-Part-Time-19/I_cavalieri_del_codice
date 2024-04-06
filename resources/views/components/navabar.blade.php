@@ -93,6 +93,11 @@
 <!--AUTORIZZATO-->
 
 @auth
+    @if (Auth::user()->is_admin)
+    <li class="nav-item">
+        <a class="nav-link" href="{{ route('admin.dashboard') }}"> Dashboard admin</a>
+
+    </li>
 
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
 
