@@ -1,9 +1,10 @@
 <?php
 
-use AdminController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PublicController;
 use App\Http\Controllers\ArticleController;
+use App\Http\Controllers\RevisorController;
+use App\Http\Controllers\AdminController;
 
 /*
 |--------------------------------------------------------------------------
@@ -52,9 +53,20 @@ Route::get('/articles/create' , [ArticleController::class , 'create'])->name('ar
 Route::post('/article/store' , [ArticleController::class , 'store'])->name('article.store');
 
 Route::middleware('admin')->group(function(){
-    Route::get('\admin\dashboard' , [AdminController::class , 'dashboard'])->name('admin.dashboard');
-    Route::patch('\admin\{user}\set-admin' , [AdminController::class , 'setAdmin'])->name('admin.setAdmin');
-    Route::patch('\admin\{user}\set-revisor' , [AdminController::class , 'setRevisor'])->name('admin.setRevisor');
-    Route::patch('\admin\{user}\set-write' , [AdminController::class , 'setWriter'])->name('admin.setWriter');
+    Route::get('/admin/dashboard' , [AdminController::class , 'dashboard'])->name('admin.dashboard');
+    Route::patch('/admin/{user}/set-admin' , [AdminController::class , 'setAdmin'])->name('admin.setAdmin');
+    Route::patch('/admin/{user}/set-revisor' , [AdminController::class , 'setRevisor'])->name('admin.setRevisor');
+    Route::patch('/admin/{user}/set-write' , [AdminController::class , 'setWriter'])->name('admin.setWriter');
 });
 
+Route::middleware('revisor')->group(function(){
+    Route::get('/revisor/dashboard' , [RevisorController::class , 'dashboard'])->name('revisor.dashboard');
+    Route::post('/revisor/{article}/accept' , [RevisorController::class , 'acceptArticle'])->name('revisor.acceptArticle');
+    Route::post('/revisor/{article}/reject' , [RevisorController::class , 'rejectArticle'])->name('revisor.rejectArticle');
+    Route::post('/revisor/{article}/undo' , [RevisorController::class , 'undoArticle'])->name('revisor.undoArticle');
+});
+
+Route::middleware('writer')->group(function(){
+    Route::get('/articles/create' , [ArticleController::class , 'create'])->name('article.create');
+    Route::post('/article/store' , [ArticleController::class , 'store'])->name('article.store');
+});

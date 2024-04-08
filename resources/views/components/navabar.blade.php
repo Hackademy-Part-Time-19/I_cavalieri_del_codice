@@ -94,10 +94,15 @@
 
 @auth
     @if (Auth::user()->is_admin)
-    <li class="nav-item">
-        <a class="nav-link" href="{{ route('admin.dashboard') }}"> Dashboard admin</a>
-
-    </li>
+         <li class="nav-item">
+            <a class="nav-link" href="{{ route('admin.dashboard') }}"> Dashboard admin</a>
+        </li>
+    @endif
+    @if (Auth::user()->is_revisor)
+         <li class="nav-item">
+            <a class="nav-link" href="{{ route('revisor.dashboard') }}"> Dashboard del revisore</a>
+        </li>
+    @endif
 
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
 
