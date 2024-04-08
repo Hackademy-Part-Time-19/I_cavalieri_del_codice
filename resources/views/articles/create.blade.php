@@ -1,6 +1,10 @@
 <x-layout>
 
     <x-navabar />
+
+    @if (session()->has('message'))
+    <h2 class="alert alert-success">{{session('message')}}</h2>
+    @endif
     
     <div class="container-fluid p-5 bg-info text-center text-white">
         <div class="row justify-content-center">

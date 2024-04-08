@@ -8,12 +8,16 @@ use App\Models\Article;
 use App\Models\Category;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\View;
 
 class ArticleController extends Controller
 {
     public function _construct()
     {
         $this->middleware('auth')->except('index' , 'show' , 'articleSearch');
+
+        $this->categories = Category::all();
+        View::share('categories', $this->categories);
     }
     /**
      * Display a listing of the resource.

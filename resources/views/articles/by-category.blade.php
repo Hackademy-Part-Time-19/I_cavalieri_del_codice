@@ -15,7 +15,7 @@
             <x-card
             :tags="$article->tags"
             title="{{ $article->title }}"
-            subtitle="{{ $artcile->subtitle }}"
+            subtitle="{{ $article->subtitle }}"
             image="{{ $article->image }}"
             category="{{ $article->name }}"
             data="{{ $article->created_at->format(d/m/Y) }}"
@@ -29,3 +29,5 @@
         </div>
 
     </div>
+
+</x-layout>
