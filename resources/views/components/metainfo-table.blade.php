@@ -28,7 +28,7 @@
                 @if ($metaType == 'tags')
                     <td>
 
-                        <form action="" method="">
+                        <form action="{{ route('admin.editTag' , ['tag' => $metaInfo]) }}" method="POST">
 
                             @csrf
                             @method('put')

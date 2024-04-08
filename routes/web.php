@@ -1,5 +1,10 @@
 <?php
 
+<<<<<<< HEAD
+=======
+use App\Http\Controllers\AdminController;
+
+>>>>>>> 93e492db19aea523116139eee1e9b721f4ae54c5
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PublicController;
 use App\Http\Controllers\ArticleController;
@@ -52,11 +57,30 @@ Route::get('/articles/create' , [ArticleController::class , 'create'])->name('ar
 
 Route::post('/article/store' , [ArticleController::class , 'store'])->name('article.store');
 
+//ROTTE ADMIN//
+
 Route::middleware('admin')->group(function(){
+<<<<<<< HEAD
     Route::get('/admin/dashboard' , [AdminController::class , 'dashboard'])->name('admin.dashboard');
     Route::patch('/admin/{user}/set-admin' , [AdminController::class , 'setAdmin'])->name('admin.setAdmin');
     Route::patch('/admin/{user}/set-revisor' , [AdminController::class , 'setRevisor'])->name('admin.setRevisor');
     Route::patch('/admin/{user}/set-write' , [AdminController::class , 'setWriter'])->name('admin.setWriter');
+=======
+
+    Route::get('/admin/dashboard' , [AdminController::class , 'dashboard'])->name('admin.dashboard');
+
+    Route::patch('/admin/{user}/set-admin' , [AdminController::class , 'setAdmin'])->name('admin.setAdmin');
+
+    Route::patch('/admin/{user}/set-revisor' , [AdminController::class , 'setRevisor'])->name('admin.setRevisor');
+
+    Route::patch('/admin/{user}/set-write' , [AdminController::class , 'setWriter'])->name('admin.setWriter');
+
+    Route::put('/admin/edit/{tag}/tag' , [AdminController::class , 'editTag'])->name('admin.editTag');
+
+    Route::put('/admin/delete/{tag}/tag' , [AdminController::class , 'deleteSTag'])->name('admin.deleteSTag');
+
+
+>>>>>>> 93e492db19aea523116139eee1e9b721f4ae54c5
 });
 
 Route::middleware('revisor')->group(function(){

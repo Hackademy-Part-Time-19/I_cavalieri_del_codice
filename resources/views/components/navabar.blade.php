@@ -27,11 +27,11 @@
                             </a>
 
                             <ul class="dropdown-menu" style="margin-left: 50px">
-                                <li><a class="dropdown-item" href="#">Tecnologia</a></li>
-                                <li><a class="dropdown-item" href="#">Smartphone</a></li>
-                                <li><a class="dropdown-item" href="#">Schermi</a></li>
-                                <li><a class="dropdown-item" href="#">Console</a></li>
-                                <li><a class="dropdown-item" href="#">Computer</a></li>
+
+                                @foreach ($categories as $category)
+                                <a class="dropdown-item"
+                                    href="{{ route('article.byCategory', compact('category')) }}">{{ $category->name }}</a>
+                            @endforeach
                             </ul>
                         </div>
                     </li>
@@ -131,11 +131,10 @@
                             </a>
 
                             <ul class="dropdown-menu" style="margin-left: 50px">
-                                <li><a class="dropdown-item" href="#">Tecnologia</a></li>
-                                <li><a class="dropdown-item" href="#">Smartphone</a></li>
-                                <li><a class="dropdown-item" href="#">Schermi</a></li>
-                                <li><a class="dropdown-item" href="#">Console</a></li>
-                                <li><a class="dropdown-item" href="">Computer</a></li>
+                                @foreach ($categories as $category)
+                                <a class="dropdown-item"
+                                    href="{{ route('article.byCategory', compact('category')) }}">{{ $category->name }}</a>
+                            @endforeach
                             </ul>
                         </div>
                     </li>
