@@ -30,7 +30,7 @@
 
                                 @foreach ($categories as $category)
                                 <a class="dropdown-item"
-                                    href="{{ route('articles.by-category', compact('category')) }}">{{ $category->name }}</a>
+                                    href="{{ route('article.byCategory', compact('category')) }}">{{ $category->name }}</a>
                             @endforeach
                             </ul>
                         </div>
