@@ -42,12 +42,12 @@
 
                     <td>
 
-                        <form action="" method="">
+                        <form return redirect(route('admin.dashboard'))->with('mesage' , 'Hai correttamente aggiornato il tag');>
 
                             @csrf
                             @method('delete')
                             
-                            <button type="submit" class="btn btn-danger text-white">Aggiorna</button>
+                            <button type="submit" class="btn btn-danger text-white">ELIMINA</button>
 
                         </form>
 

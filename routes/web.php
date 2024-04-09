@@ -66,7 +66,7 @@ Route::middleware('admin')->group(function(){
 
     Route::put('/admin/edit/{tag}/tag' , [AdminController::class , 'editTag'])->name('admin.editTag');
 
-    Route::put('/admin/delete/{tag}/tag' , [AdminController::class , 'deleteSTag'])->name('admin.deleteSTag');
+    Route::put('/admin/delete/{tag}/tag' , [AdminController::class , 'deleteTag'])->name('admin.deleteTag');
 
 
 

@@ -29,9 +29,9 @@
                             <ul class="dropdown-menu" style="margin-left: 50px">
 
                                 @foreach ($categories as $category)
-                                <a class="dropdown-item"
-                                    href="{{ route('article.byCategory', compact('category')) }}">{{ $category->name }}</a>
-                            @endforeach
+                                    <a class="dropdown-item"
+                                        href="{{ route('article.byCategory', compact('category')) }}">{{ $category->name }}</a>
+                                @endforeach
                             </ul>
                         </div>
                     </li>
@@ -94,13 +94,9 @@
 
 @auth
     @if (Auth::user()->is_admin)
-         <li class="nav-item">
+        <li class="nav-item">
             <a class="nav-link" href="{{ route('admin.dashboard') }}"> Dashboard admin</a>
-        </li>
-    @endif
-    @if (Auth::user()->is_revisor)
-         <li class="nav-item">
-            <a class="nav-link" href="{{ route('revisor.dashboard') }}"> Dashboard del revisore</a>
+
         </li>
     @endif
 
@@ -132,9 +128,9 @@
 
                             <ul class="dropdown-menu" style="margin-left: 50px">
                                 @foreach ($categories as $category)
-                                <a class="dropdown-item"
-                                    href="{{ route('article.byCategory', compact('category')) }}">{{ $category->name }}</a>
-                            @endforeach
+                                    <a class="dropdown-item"
+                                        href="{{ route('article.byCategory', compact('category')) }}">{{ $category->name }}</a>
+                                @endforeach
                             </ul>
                         </div>
                     </li>
@@ -182,7 +178,8 @@
 
                     <!--BARRA DI RICERCA-->
 
-                    <form class="d-flex" method="GET" action="{{ route('article.search')}}" style="margin-left: 50px">
+                    <form class="d-flex" method="GET" action="{{ route('article.search') }}"
+                        style="margin-left: 50px">
                         <input style="width: 200px" class="form-control me-2" type="search" placeholder="Search"
                             aria-label="Search" name="query">
                         <button class="btn btn-outline-info" type="submit">Cerca</button>
@@ -209,9 +206,9 @@
 
                                 <button class="logout" type="submit">ESCI</button>
 
-                                        </form>
+                                </form>
                                 </a>
-                            
+
                     </li>
 
                 </ul>
