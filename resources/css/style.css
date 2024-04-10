@@ -1,8 +1,35 @@
+body {
+  font-family: Arial, sans-serif;
+  transition: background-color 0.3s ease;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.dark-theme {
+  background-color: #222;
+  color: #fff;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+
 .corpo {
 
   background-color: #77B0AA;
   height: 100%;
   margin-top: 0px;
+/*cambio tema*/
+  font-family: Arial, sans-serif;
+  transition: background-color 0.3s ease;
 }
 
 .container-fluid {
@@ -23,7 +50,7 @@
 
 #animated-text-strip .marquee {
   white-space: nowrap;
-  animation: marquee 15s linear infinite;
+  animation: marquee 20s linear infinite;
   max-width: none;
 }
 

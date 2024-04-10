@@ -14,7 +14,7 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <!--VOCI MENU TECNOLOGIA-->
+            <!--VOCI MENU CATEGORIA-->
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
@@ -84,8 +84,11 @@
                     </form>
                 </ul>
 
+                
+
             </div>
         </div>
+
     </nav>
 
 @endguest
@@ -212,6 +215,8 @@
                     </li>
 
                 </ul>
+
+               
             </div>
             </li>
 

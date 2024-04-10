@@ -12,7 +12,7 @@
         <div class="row justify-content-center">
             @foreach ($articles as $article)
             
-            <x-card>
+            <x-card
             :tags="$article->tags"
             :title=" $article->title "
             :subtitle="$article->subtitle "
@@ -23,7 +23,7 @@
             :url=" route('article.show' , compact(article)) "
             :urlCategory=" route('article.byCategory' , ['category' => $article->category->id])" 
 
-            </x-card>
+            />
                 
             @endforeach
             

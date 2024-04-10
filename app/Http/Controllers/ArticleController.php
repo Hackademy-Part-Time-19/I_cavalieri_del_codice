@@ -25,7 +25,7 @@ class ArticleController extends Controller
     public function index()
     {
         $articles = Article::where('is_accepted' , true)->orderBy('created_at', 'desc')->get();
-        return view('welcome', compact('articles'));
+        return view('articles.index', compact('articles'));
     }
 
     public function articleSearch(Request $request){

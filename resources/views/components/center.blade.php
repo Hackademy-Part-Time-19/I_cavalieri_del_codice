@@ -15,10 +15,10 @@
 <!--MESSAGGIO SCOREVOLE-->
 
     <div id="animated-text-strip">
-        <span class="marquee">ACCEDDI PER VEDERE GLI ULTIMI ARTICOLI INSERITI&nbsp;</span>
-        <span class="marquee">♠♠♠♠ACCEDI PER VEDERE GLI ULTIMI ARTICOLI INSERITI&nbsp;</span>
-        <span class="marquee">♠♠♠♠ACCEDI PER VEDERE GLI ULTIMI ARTICOLI INSERITI&nbsp;</span>
-        <span class="marquee">♠♠♠♠ACCEDI PER VEDERE GLI ULTIMI ARTICOLI INSERITI&nbsp;</span>
+        <span class="marquee">PROSSIMAMENTE IN COMMERCIO&nbsp;</span>
+        <span class="marquee">♥️♥️♥️♥️PROSSIMAMENTE IN COMMERCIO&nbsp;</span>
+        <span class="marquee">♥️♥️♥️♥️PROSSIMAMENTE IN COMMERCIO&nbsp;</span>
+        <span class="marquee">♥️♥️♥️♥️PROSSIMAMENTE IN COMMERCIO&nbsp;</span>
     </div>
 
     <!--CARD-->

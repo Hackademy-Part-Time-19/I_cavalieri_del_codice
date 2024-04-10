@@ -42,15 +42,15 @@ Route::get('/article/search' , [ArticleController::class , 'articleSearch'])->na
 
 Route::get('/article/index' , [ArticleController::class, 'index'])->name('article.index');
 
-Route::post('/article/store' , [ArticleController::class, 'store'])->name('article.store');
+
 
 Route::get('/article/show/{article}' , [ArticleController::class, 'show'])->name('article.show');
 
 Route::get('/article/category/{category}' , [ArticleController::class , 'byCategory' ])->name('article.byCategory');
 
-Route::get('/articles/create' , [ArticleController::class , 'create'])->name('article.create');
 
-Route::post('/article/store' , [ArticleController::class , 'store'])->name('article.store');
+
+
 
 //ROTTE ADMIN//
 
@@ -68,6 +68,8 @@ Route::middleware('admin')->group(function(){
 
     Route::put('/admin/delete/{tag}/tag' , [AdminController::class , 'deleteTag'])->name('admin.deleteTag');
 
+    Route::put('/admin/edit/{category}/category' , [AdminController::class , 'editCategory'])->name('admin.editCategory');
+
 
 
 });
@@ -80,6 +82,6 @@ Route::middleware('revisor')->group(function(){
 });
 
 Route::middleware('writer')->group(function(){
-    Route::get('/articles/create' , [ArticleController::class , 'create'])->name('article.create');
+    Route::get('/article/create' , [ArticleController::class , 'create'])->name('article.create');
     Route::post('/article/store' , [ArticleController::class , 'store'])->name('article.store');
 });

@@ -71,5 +71,26 @@ public function deleteTag(Tag $tag){
     
 }
 
+//CATEGORIE TAG//
+
+
+public function editCategory(Request $request , Category $category){
+
+    $request->validate([
+
+    'name' => 'required|unique:categorys',
+
+]);
+
+$category->update([
+
+   'mame' => strtolower($request->name),
+
+]);
+
+return redirect(route('admin.dashboard'))->with('mesage' , 'Hai correttamente aggiornato la categoria');
+
+}
+
 
 }
