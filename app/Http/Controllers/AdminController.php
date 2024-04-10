@@ -92,5 +92,28 @@ return redirect(route('admin.dashboard'))->with('mesage' , 'Hai correttamente ag
 
 }
 
+public function deleteCategory(Category $category){
+
+    
+    $category->delete();
+
+    return redirect(route('admin.dashboard'))->with('mesage' , 'Hai correttamente eliminato la categoria');
+
+    
+}
+
+public function storeCategory(Request $request){
+
+   Category::create([
+
+    'mame' => strtolower($request->name),
+
+   ]);
+
+   return redirect(route('admin.dashboard'))->with('mesage' , 'Hai correttamente inserito una nuova  categoria');
+
+
+}
+
 
 }

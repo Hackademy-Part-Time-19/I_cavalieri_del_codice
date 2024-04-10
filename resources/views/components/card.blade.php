@@ -14,22 +14,40 @@
 
                     <p class="card-text">{{ $subtitle ?? 'NON DISPONIBILE' }}</p>
 
+                     <!-- User story 5.3: inizio -->
+
+                   @if ($category)
+
+                   <a class="small text-muted d-flex justify-content-center align-items-center" href="{{ $urlCategory ?? 'NON DISPONIBILE' }}">{{ $category ?? 'NON DISPONIBILE' }}</a>
+                       
+                   @else
+
+                   <p class="small fst-italic text-capitalize"></p>
+                       
+                   @endif
+
+                   <!-- User story 5.3: fine -->
+
+                   <!-- User story 5.1: inizio -->
+                   <p class="small fst-italic text-capitalize">
+                    @if (isset($tags) && count($tags) > 0)
+                        @foreach ($tags as $tag)
+                            #{{ $tag->name }}
+                        @endforeach
+                    @else
+                        Nessun tag disponibile
+                    @endif
+                </p>
+
+                 <!-- User story 5.1: fine -->
+
                     <p class="card-text" style="max-height: 300px; overflow-y: auto;">{{ $body ?? 'NON DISPONIBILE' }}</p>
 
                     <p class="card-text">Redatto il {{ $data ?? 'NON DISPONIBILE' }} da {{ $user ?? 'NON DISPONIBILE' }}</p>
 
-                    <a class="small text-muted d-flex justify-content-center align-items-center" href="{{ $urlCategory ?? 'NON DISPONIBILE' }}">{{ $category ?? 'NON DISPONIBILE' }}</a>
+                    
 
-                    <!-- User story 5.1: Displaying tags -->
-                    <p class="small fst-italic text-capitalize">
-                        @if (isset($tags) && count($tags) > 0)
-                            @foreach ($tags as $tag)
-                                #{{ $tag->name }}
-                            @endforeach
-                        @else
-                            Nessun tag disponibile
-                        @endif
-                    </p>
+                    
 
                     <a href="{{ $url ?? 'NON DISPONIBILE' }}" class="btn btn-info text-white" target="_blank">Leggi</a>
 

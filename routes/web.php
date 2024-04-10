@@ -70,6 +70,10 @@ Route::middleware('admin')->group(function(){
 
     Route::put('/admin/edit/{category}/category' , [AdminController::class , 'editCategory'])->name('admin.editCategory');
 
+    Route::delete('/admin/delete/{category}/category' , [AdminController::class , 'deleteCategory'])->name('admin.deleteCategory');
+
+    Route::post('/admin/category/store' , [AdminController::class , 'storeCategory'])->name('admin.storeCategory');
+
 
 
 });

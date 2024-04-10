@@ -62,11 +62,26 @@
         </div>
     </div>
 
+    <!--user story 5.3-->
+
     <div class="container my-5">
         <div class="row justify-content-center">
             <div class="col-12">
                 <h2>Le categorie della piattaforma</h2>
                 <x-metainfo-table :metaInfo="$tags" metaType="tags" />
+
+                <form action="{{admin.storeCategory}}" class="d-flex" method="POST">
+
+                    @csrf
+                    <input type="text" name="name" class="form-control me-2" placeholder="Inserisci una categoria">
+
+                    <button type="submit" class="btn btn-success text-white">Aggiungi</button>
+
+
+
+
+
+                </form>
             </div>
         </div>
     </div>
