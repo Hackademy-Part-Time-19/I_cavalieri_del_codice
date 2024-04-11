@@ -6,7 +6,7 @@
 
             <div class="card ml-2" style="background-color: #{{ dechex(mt_rand(0, 0xffffff)) }};height: 850px;">
 
-                <img src="{{ $image ??'https://www.prolococisanobg.it/wp-content/uploads/2017/10/Non-disponibile-_04.jpg' }}" class="card-img-top" alt="Non disponibile" style="max-height: 600px;">
+                <img height="500px"  src="{{ $image ??'https://www.prolococisanobg.it/wp-content/uploads/2017/10/Non-disponibile-_04.jpg' }}" class="card-img-top" alt="Non disponibile" style="max-height: 600px;">
 
                 <div class="card-body" style="max-height: 300px; overflow-y: scroll;">
 
@@ -49,7 +49,7 @@
 
                     
 
-                    <a href="{{ $url ?? 'NON DISPONIBILE' }}" class="btn btn-info text-white" target="_blank">Leggi</a>
+                    <button id="toggleButton">tema</button>
 
                     <a href="{{ $url ?? 'NON DISPONIBILE' }}" class="btn btn-info text-white" target="_blank">Modifica</a>
 
@@ -61,3 +61,27 @@
         </div>
     </div>
 </div>
+
+<script>
+
+let isRandom = false;
+
+document.getElementById('toggleButton').addEventListener('click', function() {
+    const card = document.querySelector('.card');
+
+    if (isRandom) {
+        card.style.backgroundColor = '#ffffff'; // Colore di sfondo predefinito
+    } else {
+        const randomColor = '#' + Math.floor(Math.random()*16777215).toString(16);
+        card.style.backgroundColor = randomColor;
+    }
+
+    isRandom = !isRandom;
+});
+
+
+
+
+
+
+</script>

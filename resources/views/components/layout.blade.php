@@ -22,5 +22,38 @@
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   
+
+    <script>
+
+let isRandom = false;
+
+document.getElementById('toggleButton').addEventListener('click', function() {
+    const corpo = document.querySelector('.corpo');
+
+    if (isRandom) {
+        corpo.style.backgroundColor = '#e9e9e9';
+    } else {
+        const randomColor = '#' + Math.floor(Math.random()*16777215).toString(16);
+        corpo.style.backgroundColor = randomColor;
+    }
+
+    isRandom = !isRandom;
+});
+
+let isRandom = false;
+
+document.getElementById('toggleButton').addEventListener('click', function() {
+    const flipCard = document.querySelector('.card');
+
+    if (isRandom) {
+        flipCard.style.backgroundColor = '#e9e9e9';
+    } else {
+        const randomColor = '#' + Math.floor(Math.random()*16777215).toString(16);
+        flipCard.style.backgroundColor = randomColor;
+    }
+
+    isRandom = !isRandom;
+});
+    </script>
   </body>
 </html>
