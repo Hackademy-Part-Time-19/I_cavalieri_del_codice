@@ -105,6 +105,13 @@
         </li>
     @endif
 
+    @if (Auth::user()->is_writer)
+        <li class="nav-item">
+            <a class="nav-link" href="{{ route('writer.dashboard') }}"> Dashboard del redattore</a>
+
+        </li>
+    @endif
+
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
 
         <div class="container-fluid">
