@@ -211,7 +211,7 @@
                                 <li><a class="dropdown-item" href="#"></a>
                                         
 
-                                <li><a class="dropdown-item" href="">Admin</a></li>
+                                <li><a class="dropdown-item" href="{{route ('admin.dashboard')}}">Admin</a></li>
 
                                 
 

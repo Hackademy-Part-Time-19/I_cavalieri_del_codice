@@ -22,21 +22,21 @@ class AdminController extends Controller
         $user->is_admin = true;
         $user->save();
 
-        return redirect(route('admin.dashboard'))->with('message' , 'Hai correttamente reso amministratore l\'utente scelto');
+        return redirect(route('admin.dashboard'))->with('message' , 'HAI CORRETTAMENTE RESO AMMINISTRATORE L\'UTENTE SCELTO');
     }
 
     public function setRevisor(User $user){
         $user->is_revisor = true;
         $user->save();
 
-        return redirect(route('admin.dashboard'))->with('message' , 'Hai correttamente reso revisore l\'utente scelto');
+        return redirect(route('admin.dashboard'))->with('message' , 'HAI CORRETTAMENTE RESO REVISORE L\'UTENTE SCELTO');
     }
 
     public function setWriter(User $user){
         $user->is_writer = true;
         $user->save();
 
-        return redirect(route('admin.dashboard'))->with('message' , 'Hai correttamente reso redattore l\'utente scelto');
+        return redirect(route('admin.dashboard'))->with('message' , 'HAI CORRETTAMENTE RESO REDATTORE L\'UTENTE SCELTO');
     }
 
     public function editTag(Request $request , Tag $tag){
