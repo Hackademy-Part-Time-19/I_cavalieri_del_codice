@@ -8,6 +8,7 @@
         </tr>
     </thead>
     <tbody>
+
         @foreach ($roleRquests as $user)
             <tr>
                 <th scope="row">{{ $user->id }}</th>
@@ -22,12 +23,14 @@
                                 <button type="submit" class="btn btn-info text-white">Attiva {{ $role }}</button>
                             </form>
                             @break
+
                         @case('revisore')
                         <form action="{{ route('admin.setRevisor' , compact('user')) }}" method="POST">
                                 @csrf
                                 @method('patch')
                                 <button type="submit" class="btn btn-info text-white">Attiva {{ $role }}</button>
                         </form>
+                        
                         @case('redattore')
                         <form action="{{ route('admin.setWriter' , compact('user')) }}" method="POST">
                                 @csrf
