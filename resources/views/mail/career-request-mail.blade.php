@@ -6,8 +6,8 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Abbiamo ricevuto</h1>
-    <h4>richiesta per il ruolo di {{ $info['role'] }} </h4>
+    <h1>Abbiamo ricevuto </h1>
+    <h4>una richiesta per il ruolo di {{ $info['role'] }} </h4>
     <p>Ricevuta da {{ $info['email'] }}</p>
 
 
