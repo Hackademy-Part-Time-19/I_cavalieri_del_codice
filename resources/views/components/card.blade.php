@@ -4,7 +4,7 @@
 
         <div class="col-12 col-ml-12 col-sm-12 p-0" style="margin: 10px">
 
-            <div class="card ml-2" style="background-color: #{{ dechex(mt_rand(0, 0xffffff)) }};height: 850px;">
+            <div id="colore" class="card ml-2" style="background-color: #5DEBD7;height: 850px;">
 
                 <img height="500px"  src="{{ $image ??'https://www.prolococisanobg.it/wp-content/uploads/2017/10/Non-disponibile-_04.jpg' }}" class="card-img-top" alt="Non disponibile" style="max-height: 600px;">
 
@@ -49,13 +49,10 @@
 
                     
 
-                    <button id="toggleButton">tema</button>
+                    <button class="toggleButton" onclick="changeCardColor(this)">Tema</button>
 
-                    <a href="{{ $url ?? 'NON DISPONIBILE' }}" class="btn btn-info text-white" target="_blank">Modifica</a>
-
-                    <a href="{{ $url ?? 'NON DISPONIBILE' }}" class="btn btn-info text-white" target="_blank">Cancella</a>
-
-                    <div id="contenitore_bottone_like"></div>
+                    
+                    
                 </div>
             </div>
         </div>
@@ -63,25 +60,27 @@
 </div>
 
 <script>
+    let cards = document.querySelectorAll('.card');
+    let originalColors = [];
 
-let isRandom = false;
+    cards.forEach((card, index) => {
+        originalColors[index] = card.style.backgroundColor;
+    });
 
-document.getElementById('toggleButton').addEventListener('click', function() {
-    const card = document.querySelector('.card');
+    let colors = ['#FF5733', '#33FF57', '#3357FF', '#5733FF', '#57FF33', '#FF3357'];
+    let currentColorIndex = 0;
 
-    if (isRandom) {
-        card.style.backgroundColor = '#ffffff'; // Colore di sfondo predefinito
-    } else {
-        const randomColor = '#' + Math.floor(Math.random()*16777215).toString(16);
-        card.style.backgroundColor = randomColor;
+    function changeCardColor(button) {
+        let card = button.parentNode;
+        let index = Array.from(card.parentNode.children).indexOf(card);
+
+        if (currentColorIndex >= colors.length) {
+            currentColorIndex = 0;
+        }
+
+        card.style.backgroundColor = colors[currentColorIndex];
+        currentColorIndex++;
     }
-
-    isRandom = !isRandom;
-});
-
-
-
-
-
-
 </script>
+
+
