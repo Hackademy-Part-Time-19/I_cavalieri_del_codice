@@ -208,18 +208,22 @@
                             </a>
 
                             <ul class="dropdown-menu" style="margin-left: 50px">
-                                <li><a class="dropdown-item" href="#">
-                                        <form action="/logout" method="post">
-                                            @csrf
+                                <li><a class="dropdown-item" href="#"></a>
+                                        
 
                                 <li><a class="dropdown-item" href="">Admin</a></li>
 
-                                <li><a class="dropdown-item" href="">Lavora con noi</a></li>
+                                
+
+                                <li><a class="dropdown-item" href="{{ route('careers')}}">Lavora con noi</a></li>
+
+                                <form action="/logout" method="post">
+                                    @csrf
 
                                 <button class="logout" type="submit">ESCI</button>
 
                                 </form>
-                                </a>
+                                
 
                     </li>
 
