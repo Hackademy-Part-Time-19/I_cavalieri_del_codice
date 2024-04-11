@@ -175,15 +175,15 @@ class ArticleController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(Article $article)
+     public function destroy(Article $article)
     {
         foreach ($article->tags as $tag) {
             $article->tags()->detach($tag);
         }
 
         $article->delete();
+
         return redirect(route('writer.dashboard'))->with('message' ,'Articolo cancellato');
     }
-
 
 }
