@@ -23,7 +23,7 @@ class ArticleController extends Controller
     public function index()
     {
         $articles = Article::where('is_accepted', true)->orderBy('created_at', 'desc')->get();
-        return view('articles.index', compact('articles'));
+        return view('article.index', compact('articles'));
     }
 
     public function articleSearch(Request $request)
@@ -31,18 +31,18 @@ class ArticleController extends Controller
         $query = $request->input('query');
         $articles = Article::search($query)->orderBy('created_at', 'desc')->get();
 
-        return view('articles.search-index', compact('articles', 'query')); // Correzione del percorso della vista
+        return view('article.search-index', compact('articles', 'query')); // Correzione del percorso della vista
     }
 
     public function byCategory(Category $category)
     {
         $articles = $category->articles()->where('is_accepted', true)->orderBy('created_at', 'desc')->get();
-        return view('articles.by-category', compact('category', 'articles'));
+        return view('article.by-category', compact('category', 'articles'));
     }
 
     public function create()
     {
-        return view('articles.create');
+        return view('article.create');
     }
 
     public function store(Request $request)
@@ -52,7 +52,7 @@ class ArticleController extends Controller
 
     public function show(Article $article)
     {
-        return view('articles.show', compact('article')); // Correzione del percorso della vista
+        return view('article.show', compact('article')); // Correzione del percorso della vista
     }
 
     public function edit(Article $article)
