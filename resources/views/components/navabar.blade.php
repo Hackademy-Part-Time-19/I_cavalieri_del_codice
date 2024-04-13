@@ -150,7 +150,7 @@
                             <ul class="dropdown-menu" style="margin-left: 20px">
                                 <li><a class="dropdown-item" href="{{ route('article.create') }}">Crea un articolo</a>
                                 </li>
-                                <li><a class="dropdown-item" href="{{ route('article.index') }}">Tutti gli articoli</a>
+                                <li><a class="dropdown-item" href="{{ route('article.index') }}">Tutti gli articoli accetatti</a>
                                 </li>
 
                             </ul>
@@ -196,7 +196,7 @@
 
                     <form class="d-flex" method="GET" action="{{ route('article.search') }}"
                         style="margin-left: 20px">
-                        <input style="width: 200px" class="form-control me-2" type="search" placeholder="Search"
+                        <input style="width: 200px" class="form-control me-2" type="search" placeholder="Cerca qui"
                             aria-label="Search" name="query">
                         <button class="btn btn-outline-info" type="submit">Cerca</button>
                     </form>

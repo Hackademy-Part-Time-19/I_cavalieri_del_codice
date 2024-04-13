@@ -2,11 +2,11 @@
 
     <div class="row">
 
-        <div class="col-12 col-ml-12 col-sm-12 p-0" style="margin: 10px">
+        <div class="col-6 .col-sm-6 .col-md-6 .col-lg-6" style="margin: 10px">
 
             <div id="colore" class="card ml-2" style="background-color: #5DEBD7;height: 850px;">
 
-                <img height="500px"  src="{{ $image ??'https://www.prolococisanobg.it/wp-content/uploads/2017/10/Non-disponibile-_04.jpg' }}" class="card-img-top" alt="Non disponibile" style="max-height: 600px;">
+                <img height="500px"  src="{{ asset('storage/logo.jpg') }}" class="card-img-top" alt="Non disponibile" style="max-height: 600px;">
 
                 <div class="card-body" style="max-height: 300px; overflow-y: scroll;">
 
@@ -49,7 +49,7 @@
 
                     
 
-                    <button class="toggleButton" onclick="changeCardColor(this)">Tema</button>
+                    <button  class="btn btn-primary dropdown" onclick="changeCardColor(this)">MODIFICA TEMA</button>
 
                     
                     
