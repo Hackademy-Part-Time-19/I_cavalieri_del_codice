@@ -1,5 +1,7 @@
 <x-layout>
 
+    <x-navabar />
+
     <div class="container-fluid p-5 bg-info text-center text-white">
         <div class="row justify-content-center">
             <h1 class="display-1">
@@ -70,7 +72,7 @@
                 <h2>Le categorie della piattaforma</h2>
                 <x-metainfo-table :metaInfo="$tags" metaType="tags" />
 
-                <form action="" class="d-flex" method="POST">
+                <form action="{{ route('admin.storeCategory') }}" class="d-flex" method="POST">
 
                     @csrf
                     <input type="text" name="name" class="form-control me-2" placeholder="Inserisci una categoria">
