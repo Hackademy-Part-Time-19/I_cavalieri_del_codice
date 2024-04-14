@@ -208,7 +208,7 @@
                         <div style="margin-left: 20px" class="dropdown">
                             <a class="btn btn-primary dropdown-toggle" href="#" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">
-                                BENVENUTO {{ auth()->user()->name }}
+                                BENVENUTO {{ strtoupper(auth()->user()->name) }}
                             </a>
 
                             <ul class="dropdown-menu" style="margin-left: 50px">
