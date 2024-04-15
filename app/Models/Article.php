@@ -47,6 +47,13 @@ class Article extends Model
         return $this->BelongsToMany(Tag::class);
     }
 
+    public function readDuration() {
+        $totalWords = str_word_count($this->body);
+        $minutesToRead = round($totalWords / 200);
+
+        return intval($minutesToRead);
+    }
+
     
 }
 

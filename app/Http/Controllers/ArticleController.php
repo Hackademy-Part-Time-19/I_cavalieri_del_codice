@@ -63,7 +63,7 @@ class ArticleController extends Controller
             'title'=> $request->title,
             'subtitle'=> $request->subtitle,
             'body'=> $request->body,
-            'image'=>'storage/'.$path, 
+            'image'=>'public/'.$path, 
             'category_id'=> $request->category,
             'user_id' => Auth::user()->id,
         ]);

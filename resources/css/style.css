@@ -536,7 +536,7 @@ ul {
 
 /*BOTTONE MI PIACE*/
 
-.container input {
+.inputcustom {
   position: absolute;
   opacity: 0;
   cursor: pointer;
@@ -544,7 +544,7 @@ ul {
   width: 0;
 }
 
-.container {
+.likecustom {
   display: block;
   position: relative;
   cursor: pointer;
@@ -567,6 +567,7 @@ svg:hover {
 
 .container input:checked ~ svg {
   fill: #2196F3;
+ 
 }
 
 
