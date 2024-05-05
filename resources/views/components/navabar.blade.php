@@ -86,7 +86,7 @@
 
                 <button class="btn btn-primary " style="margin-left: 50px" id="toggleButton">CAMBIA TEMA</button>
 
-                
+
 
             </div>
         </div>
@@ -98,19 +98,7 @@
 <!--AUTORIZZATO-->
 
 @auth
-    @if (Auth::user()->is_admin)
-        <li class="nav-item">
-            <a class="nav-link" href="{{ route('admin.dashboard') }}"> Dashboard admin</a>
-
-        </li>
-    @endif
-
-    @if (Auth::user()->is_writer)
-        <li class="nav-item">
-            <a class="nav-link" href="{{ route('writer.dashboard') }}"> Dashboard del redattore</a>
-
-        </li>
-    @endif
+    
 
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
 
@@ -133,12 +121,12 @@
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
                         <div class="dropdown">
-                            <a style="margin-left: 50px" class="btn btn-primary dropdown-toggle" href="#"
+                            <a style="margin-left: 20px" class="btn btn-primary dropdown-toggle" href="#"
                                 role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 CATEGORIA
                             </a>
 
-                            <ul class="dropdown-menu" style="margin-left: 50px">
+                            <ul class="dropdown-menu" style="margin-left: 20px">
                                 @foreach ($categories as $category)
                                     <a class="dropdown-item"
                                         href="{{ route('article.byCategory', compact('category')) }}">{{ $category->name }}</a>
@@ -154,19 +142,35 @@
                     <li class="nav-item dropdown">
 
                         <div class="dropdown">
-                            <a style="margin-left: 50px" class="btn btn-primary dropdown-toggle" href="#"
+                            <a style="margin-left: 20px" class="btn btn-primary dropdown-toggle" href="#"
                                 role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 ARTICOLI
                             </a>
 
-                            <ul class="dropdown-menu" style="margin-left: 50px">
+                            <ul class="dropdown-menu" style="margin-left: 20px">
                                 <li><a class="dropdown-item" href="{{ route('article.create') }}">Crea un articolo</a>
                                 </li>
-                                <li><a class="dropdown-item" href="{{ route('article.index') }}">Tutti gli articoli</a>
+                                <li><a class="dropdown-item" href="{{ route('article.index') }}">Tutti gli articoli accetatti</a>
                                 </li>
 
                             </ul>
                     </li>
+
+                    @if (Auth::user()->is_admin)
+                        <li class="nav-item">
+                            <a style="margin-left: 20px" class="btn btn-primary dropdown" href="{{ route('admin.dashboard') }}">ADMIN</a>
+
+                        </li>
+                    @endif
+
+                    @if (Auth::user()->is_revisor)
+                        <li class="nav-item">
+                            <a style="margin-left: 20px" class="btn btn-primary dropdown" href="{{ route('revisor.dashboard') }}">REVISORE</a>
+
+                        </li>
+                    @endif
+
+                  
 
                     <!--VOCI MENU LINGUA-->
 
@@ -174,12 +178,12 @@
                     <li class="nav-item dropdown">
 
                         <div class="dropdown">
-                            <a style="margin-left: 50px" class="btn btn-primary dropdown-toggle" href="#"
+                            <a style="margin-left: 20px" class="btn btn-primary dropdown-toggle" href="#"
                                 role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 SELEZIONA LINGUA
                             </a>
 
-                            <ul class="dropdown-menu" style="margin-left: 50px">
+                            <ul class="dropdown-menu" style="margin-left: 20px">
                                 <li><a class="dropdown-item" href="{{ route('homepage') }}">Italiano</a></li>
                                 <li><a class="dropdown-item" href="{{ route('homepageinglese') }}">Inglese</a></li>
                                 <li><a class="dropdown-item" href="{{ route('homepagegiapponese') }}">Giapponesi</a>
@@ -191,8 +195,8 @@
                     <!--BARRA DI RICERCA-->
 
                     <form class="d-flex" method="GET" action="{{ route('article.search') }}"
-                        style="margin-left: 50px">
-                        <input style="width: 200px" class="form-control me-2" type="search" placeholder="Search"
+                        style="margin-left: 20px">
+                        <input style="width: 200px" class="form-control me-2" type="search" placeholder="Cerca qui"
                             aria-label="Search" name="query">
                         <button class="btn btn-outline-info" type="submit">Cerca</button>
                     </form>
@@ -201,37 +205,33 @@
 
                     <li class="nav-item dropdown">
 
-                        <div style="margin-left: 50px" class="dropdown">
+                        <div style="margin-left: 20px" class="dropdown">
                             <a class="btn btn-primary dropdown-toggle" href="#" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">
-                                BENVENUTO {{ auth()->user()->name }}
+                                BENVENUTO {{ strtoupper(auth()->user()->name) }}
                             </a>
 
                             <ul class="dropdown-menu" style="margin-left: 50px">
                                 <li><a class="dropdown-item" href="#"></a>
-                                        
 
-                                <li><a class="dropdown-item" href="">Admin</a></li>
 
-                                
-
-                                <li><a class="dropdown-item" href="{{ route('careers')}}">Lavora con noi</a></li>
+                                <li><a class="dropdown-item" href="{{ route('careers') }}">Lavora con noi</a></li>
 
                                 <form action="/logout" method="post">
                                     @csrf
 
-                                <button class="logout" type="submit">ESCI</button>
+                                    <button class="logout" type="submit">ESCI</button>
 
                                 </form>
-                                
+
 
                     </li>
 
                 </ul>
 
-                <button class="btn btn-primary " style="margin-left: 50px" id="toggleButton">CAMBIA TEMA</button>
+                <button style="margin-left: 20px" class="btn btn-primary " style="margin-left: 50px" id="toggleButton">CAMBIA TEMA</button>
 
-               
+
             </div>
             </li>
 

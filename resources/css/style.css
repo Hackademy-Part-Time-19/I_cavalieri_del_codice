@@ -34,7 +34,7 @@ button {
 
 .container-fluid {
 
-  background-color: #65B741;
+  background-color: #135D66;
 
 }
 
@@ -532,3 +532,46 @@ ul {
       max-width: 90%; /* Modifica la larghezza massima del form per adattarsi a schermi più piccoli */
   }
 }
+
+
+/*BOTTONE MI PIACE*/
+
+.inputcustom {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.likecustom {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  user-select: none;
+}
+
+svg {
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 50px;
+  width: 50px;
+  transition: all 0.3s;
+  fill: #666;
+}
+
+svg:hover {
+  transform: scale(1.1) rotate(-10deg);
+}
+
+.container input:checked ~ svg {
+  fill: #2196F3;
+ 
+}
+
+
+
+
+
+

@@ -40,20 +40,7 @@ document.getElementById('toggleButton').addEventListener('click', function() {
     isRandom = !isRandom;
 });
 
-let isRandom = false;
 
-document.getElementById('toggleButton').addEventListener('click', function() {
-    const flipCard = document.querySelector('.card');
-
-    if (isRandom) {
-        flipCard.style.backgroundColor = '#e9e9e9';
-    } else {
-        const randomColor = '#' + Math.floor(Math.random()*16777215).toString(16);
-        flipCard.style.backgroundColor = randomColor;
-    }
-
-    isRandom = !isRandom;
-});
     </script>
   </body>
 </html>

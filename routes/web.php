@@ -42,6 +42,7 @@ Route::get('/article/search' , [ArticleController::class , 'articleSearch'])->na
 
 Route::get('/article/index' , [ArticleController::class, 'index'])->name('article.index');
 
+Route::post('/article/store' , [ArticleController::class, 'store'])->name('article.store');
 
 
 Route::get('/article/show/{article}' , [ArticleController::class, 'show'])->name('article.show');
@@ -71,7 +72,7 @@ Route::middleware('admin')->group(function(){
     Route::put('/admin/edit/{category}/category' , [AdminController::class , 'editCategory'])->name('admin.editCategory');
 
     Route::delete('/admin/delete/{category}/category' , [AdminController::class , 'deleteCategory'])->name('admin.deleteCategory');
-
+    
     Route::post('/admin/category/store' , [AdminController::class , 'storeCategory'])->name('admin.storeCategory');
 
 
@@ -93,3 +94,7 @@ Route::middleware('writer')->group(function(){
     Route::put('/article/{article/update' , [ArticleController::class , 'update'])->name('article.update');
     Route::delete('/article/{article}/destroy' , [ArticleController::class , 'destroy'])->name('article.destroy');
 });
+
+
+
+

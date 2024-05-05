@@ -19,7 +19,7 @@
 
     <tbody>
 
-        @foreach ($metaInfos as $metaInfo)
+        @foreach ($metaInfo as $metaInfo)
             <tr>
 
                 <th scope="row">{{ $metaInfo->id }}</th>
