@@ -170,7 +170,7 @@ class ArticleController extends Controller
         $article->tags()->sync($newTag);
         return redirect(route('writer.dashboard'))->with('message' ,'Articolo Modificato correttamente');
     }
-    }
+    
 
     /**
      * Remove the specified resource from storage.
